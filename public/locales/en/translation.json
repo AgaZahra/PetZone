@@ -1,0 +1,359 @@
+{
+    "notfound": {
+        "title": "Oops! That Page Can't Be Found",
+        "p": "We're Really Sorry but we can't seem to find the page you were looking for.",
+        "btn": "BACK TO HOME"
+    },
+    "banner": {
+        "one": "Free Shipping On Orders Over $50!",
+        "two": "Amazing Deals On Your Favorite Pet Supplies",
+        "three": "Clearance Sale Event:Up to 70% Off Select Items!",
+        "four": "On Every Purchase Earn Points And Get Rewards",
+        "five": "Long Weekend Sale Up To 50% OFF"
+    },
+    "header": {
+        "home": "Home",
+        "shop": "Shop",
+        "blog": "Blog",
+        "services": "Services",
+        "pages": "Pages",
+        "about":"About",
+        "faq":"Faq",
+        "contactus": "Contact Us"
+    },
+    "footer": {
+        "form": {
+            "title": "Get In Touch With Us",
+            "p": "No spam, we hate it more than you do.",
+            "submit": "Submit"
+        },
+        "useful": {
+            "title": "Useful links",
+            "search": "Search",
+            "press": "Press Room",
+            "cookies": "Cookies",
+            "privacy": "Privacy Policy",
+            "details": "Shipping Details",
+            "map": "Site Map"
+        },
+        "services": {
+            "title": "Custom Services",
+            "shopping": "Free Shopping",
+            "search": "Advanced Search",
+            "help": "Help",
+            "location": "Store Location",
+            "order": "Order & Returns",
+            "app": "Mobile Apps"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "location": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
+            "phone": "+000-123-456-789",
+            "email": "contact@example.com"
+        },
+        "p": "©Wedesigntech All Rights Reserved"
+    },
+    "home": {
+        "hero": {
+            "cat": "CAT",
+            "spanOne": "BEST QUALITY",
+            "descOne": "25% Off On Premium Cat Foods",
+            "dog": "DOG",
+            "spanTwo": "GET 25% OFF",
+            "descTwo": "Nourishing Pets,One Bowl At A Time",
+            "bird": "BİRD",
+            "spanThree": "NEW ARRIVALS",
+            "descThree": "Save 30% On Premium Mixed Seeds",
+            "foods": "FOODS",
+            "p": "Telles orchi ac auctor augue mauris augue cursus mattis molestie a iaculis at. Eu feugiat pretium nibh ipsum consequat.",
+            "btn": "BUY NOW"
+        },
+        "services": {
+            "span": "WORLD-CLASS SERVİCES",
+            "title": "Complete Pet Care Solutions",
+            "desc": "Scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus laoreet.Risus quis varius quam quisque. Tempor nec feugiat nisl pretium fusce id.",
+            "ul": {
+                "liOne": {
+                    "title": "Pet Boarding",
+                    "one": "Kennels",
+                    "two": "Home Boarding",
+                    "three": "Pet Hotels"
+                },
+                "liTwo": {
+                    "title": "Pet Setting",
+                    "one": "In-Home",
+                    "two": "Day Care",
+                    "three": "Live-In"
+                },
+                "liThree": {
+                    "title": "Veterinary Care",
+                    "one": "Regular Checkup",
+                    "two": "Dental Care",
+                    "three": "Vaccination"
+                },
+                "liFour": {
+                    "title": "Pets Day Care",
+                    "one": "Home Based",
+                    "two": "Drop-In",
+                    "three": "Center Based"
+                },
+                "p": "Quicque nec nisi ut velit bibendum interdum"
+            }
+        },
+        "timer": {
+            "title": "Exclusive Early Bird Offer: 20% Off",
+            "p": "Hurry up! Deals end up :",
+            "days": "Days",
+            "hrs": "Hrs",
+            "mins": "Mins",
+            "secs": "Secs",
+            "btn": "SHOP NOW"
+        },
+        "offers": {
+            "span": "GET OFFERS",
+            "title": "Welcome to Offers zone",
+            "cards": [
+                {
+                    "title": "Take 25% Off",
+                    "code": "DOGFOODS01",
+                    "img": "dog",
+                    "cupon": "Cupon Code:",
+                    "btnColor": "#FFA028"
+                },
+                {
+                    "title": "Buy One, Take One",
+                    "code": "CATFOODS01",
+                    "img": "cat",
+                    "cupon": "Cupon Code:",
+                    "btnColor": "#00C9D5"
+                },
+                {
+                    "title": "Avian Day Discounts",
+                    "code": "BIRDFOODS01",
+                    "img": "bird",
+                    "cupon": "Cupon Code:",
+                    "btnColor": "#E4266E"
+                }
+            ]
+        },
+        "plans": {
+            "span": "Affordable Pricing Plans",
+            "title": "Your Budget, Your Choice",
+            "box": [
+                {
+                    "price": 8,
+                    "plan": "Basic"
+                },
+                {
+                    "price": 8,
+                    "plan": "Silver"
+                },
+                {
+                    "price": 28,
+                    "plan": "Gold"
+                },
+                {
+                    "price": 35,
+                    "plan": "Platinum"
+                }
+            ]
+        },
+        "brands": {
+            "title": "Trusted & Top-notch Brands",
+            "box": [
+                {
+                    "brand": "brand1",
+                    "icon": "brandIcon1",
+                    "bg": "#D2FAFF"
+                },
+                {
+                    "brand": "brand2",
+                    "icon": "brandIcon2",
+                    "bg": "#FFD0E9"
+                },
+                {
+                    "brand": "brand3",
+                    "icon": "brandIcon3",
+                    "bg": "#E1FFD5"
+                },
+                {
+                    "brand": "brand4",
+                    "icon": "brandIcon4",
+                    "bg": "#bbc0ea"
+                },
+                {
+                    "brand": "brand5",
+                    "icon": "brandIcon5",
+                    "bg": "#FFD0E9"
+                },
+                {
+                    "brand": "brand6",
+                    "icon": "brandIcon6",
+                    "bg": "#E1FFD5"
+                },
+                {
+                    "brand": "brand7",
+                    "icon": "brandIcon7",
+                    "bg": "#bbc0ea"
+                }
+            ]
+        },
+        "awards": {
+            "title": "Honors We Have Received",
+            "box": [
+                {
+                    "icon": "award1"
+                },
+                {
+                    "icon": "award2"
+                },
+                {
+                    "icon": "award3"
+                },
+                {
+                    "icon": "award4"
+                },
+                {
+                    "icon": "award5"
+                },
+                {
+                    "icon": "award6"
+                }
+            ]
+        },
+        "feedback": {
+            "title": "Supported By 20k+ Individuals",
+            "span": "CLIENT FEEDBACK",
+            "cards": [
+                {
+                    "name": "Mariyah - Professor",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img1"
+                },
+                {
+                    "name": "Jessica - Teacher",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img2"
+                },
+                {
+                    "name": "Laara - Lawyer",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img3"
+                }
+            ]
+        },
+        "mobile": {
+            "title": "Your Mobile Petshop",
+            "span": "GET IT NOW",
+            "dowland": "Dowland. Explore. Enjoy",
+            "p": "Morbi tempus iaculis urna id volutpat lacus laoreet. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Nec dui nunc mattis enim ut. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis."
+        },
+        "animalcare": {
+            "grooming": "Grooming",
+            "care": "Pets Care",
+            "food": "Cat Food",
+            "training": "Training",
+            "p": "Ut aliquam purus sit amet luctus venenatis magna Odio pellent."
+        }
+    },
+    "contact": {
+        "faqs": {
+            "span": "FAQ'S",
+            "title": "Commonly Asked Questions",
+            "desc": "Nibh mauris cursus mattis molestie. Facilisi nullam vehicula ipsum a arcu cursus. Nec ultrices dui sapien eget mi proin sed libero. Tellus mattis pellentesque",
+            "box": [
+                {
+                    "imgOne": "dogFour",
+                    "imgTwo": "catTwo",
+                    "title": "Q. What are your store working hours?",
+                    "desc": "A. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#D2FAFF"
+                },
+                {
+                    "imgOne": "birdOne",
+                    "imgTwo": "birdTwo",
+                    "title": "Q. Do you offer pet grooming services?",
+                    "desc": "A. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Habitant morbi trist.",
+                    "btnColor": "#FFD0E9"
+                },
+                {
+                    "imgOne": "catOne",
+                    "imgTwo": "catTwo",
+                    "title": "Q. Do you have adoption facility?",
+                    "desc": "A. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#E1FFD5"
+                },
+                {
+                    "imgOne": "birdThree",
+                    "imgTwo": "dogThree",
+                    "title": "Q. Do you offer free delivery?",
+                    "desc": "A. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#bbc0ea"
+                }
+            ]
+        },
+        "form": {
+            "title": "Book Your Slot",
+            "span": "CONTACT US",
+            "desc": "Sed porta auctor vestibulum pharetra. Pellentesque ultrices orci id elit feugiat venenatis. Donec et pellentesque risus.",
+            "address":"ADDRESS",
+            "addDesc":"No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
+            "open":"WE ARE OPEN",
+            "openDesc":"Monday - Saturday : 09.00am to  7pm,Sunday : Holiday",
+            "emailDesc":"contact@example.com / info@example.com",
+            "name": " First Name*",
+            "lastName": "Last Name*",
+            "email": "Email*",
+            "number": "Phone Number*",
+            "message": "Your Message",
+            "btn": "SEND MESSAGE",
+            "error": "Please fill out this field.",
+            "errMes": "❌ One or more fields have an error. Please check and try again.",
+            "succes": "✅ Thank you for your message. It has been sent."
+        },
+        "app":{
+            "span":"Get us on your hands",
+            "title":"Get Special Offers by Downloading the App.",
+            "desc":"Egestas sed tempus urna et pharetra pharetra massa massa. Quis viverra nibh cras pulvinar."
+        }
+    },
+    "authPage":{
+        "name":"Full Name",
+        "mail":"Email",
+        "pass":"Password",
+        "confirmPass":"Confirm Password",
+        "signIn":"Sign In",
+        "signUp":"Create Account",
+        "back":"Welcome Back!",
+        "hi":"Hello, Friend!",
+        "social":"or use your email for registration",
+        "p":"Enter your personal details and start journey with us",
+        "regux":"Password must be between 8 and 15 characters. A-Z, a-z, 0-9, @.#$!%*?&^",
+        "forget":"Forget Your Password?",
+        "btnIn":"Sign In",
+        "btnUp":"Sign Up",
+         "alert":{
+            "error":{
+                "passReg":"Password is not equal!",
+                "mailReg":"This email is already registered!",
+                "mailLogin":"Email or password is wrong!",
+                "catch":"Something went wrong!"
+                
+            },
+            "success":{
+                "accaount":"New account has been created!",
+                "login":"Login is successful!"
+
+            },
+            "warning":{
+                "inputReg":"Please, fill in all fields",
+                "inputLogin":"Please, fill inputs",
+                "pass":"Passwords do not match"
+            }
+
+        }
+    }
+  
+
+
+}

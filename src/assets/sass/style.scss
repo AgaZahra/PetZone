@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none
+    }
+  // border: 1px solid red !important;
+}
+
+
+@import 'variable';
+@import 'notFoundPage';
+@import 'banner';
+@import 'header';
+@import 'footer';
+@import './home/home';
+@import 'backToTop';
+@import 'authPage';
+@import './singleCard//card';
+
+
+
+//Contact-Us
+@import './contactUs/contactUs';
+
+.css-0{
+  border: none;
+}
+.user-icon{
+  position: relative;
+  top: .5rem;
+}
+
+
+.btn {
+  font-family: $secondary-font;
+  color: $White;
+  background-color: $DarkBlue;
+  border: 1px solid $DarkBlue;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  transition-duration: 0.5s;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 999;
+
+  &:hover,
+  &:focus,
+  &:active {
+      background-color: $Orange;
+  }
+}
+
+
+.hero-container {
+  position: relative;
+  padding: 0 !important;
+  .hero {
+      width: 100%;
+      height: 65vh;
+      background: linear-gradient(357deg, rgba(210, 250, 255, 1) 0%, rgba(210, 250, 255, 0.9248949579831933) 45%),
+          url('../../../../src/assets/media/image/image-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      h2{
+          color: $DarkBlue;
+          font-family: $secondary-font;
+          font-weight: bolder;
+          font-size: 3.5rem;
+         text-align: center;
+          padding-top: 5%;
+
+      }
+      h5{
+          color: $DarkBlue;
+          font-family: $secondary-font;
+          text-align: center;
+
+      }
+  }
+  .svg-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 999 !important;
+      width: 100%;
+      height: auto;
+      
+      svg {
+          width: 100%;
+          height: auto;
+          fill: $White !important;
+      }
+  }
+
+}
+
+
+
+
+
+
+

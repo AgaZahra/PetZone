@@ -1,0 +1,354 @@
+{
+    "notfound": {
+        "title": "Üzr istəyirik! Bu Səhifəni Tapa Bilmirik",
+        "p": "Bağışlayın, amma baxmaq istədiyiniz səhifəni tapa bilmirik.",
+        "btn": "ANA SƏHİFƏYƏ QAYID"
+    },
+    "banner": {
+        "one": "50$-dan yuxarı sifarişlərdə çatdırılma pulsuzdur!",
+        "two": "Sevdiyiniz Heyvan Təchizatı üzrə İnanılmaz Endirimlər",
+        "three": "Təmizləmə Satış Tədbiri:Seçilmiş əşyalara 70%-ə qədər endirim!",
+        "four": "Hər alış-verişdə xal qazanın və mükafatlar alın",
+        "five": "Həftəsonu Satışı 50%-ə qədər ENDİRİM"
+    },
+    "header": {
+        "home": "Ana Səhifə",
+        "shop": "Mağaza",
+        "blog": "Bloq",
+        "services": "Xidmətlər",
+        "pages": "Səhifələr",
+        "about":"Haqqımızda",
+        "faq":"Faq",
+        "contactus": "Əlaqə"
+    },
+    "footer": {
+        "form": {
+            "title": "Bizimlə Əlaqə Saxlayın",
+            "p": "Spam göndərilmir, biz onu sizdən daha çox sevmirik.",
+            "submit": "Göndər"
+        },
+        "useful": {
+            "title": "Faydalı Linklər",
+            "search": "Axtarış",
+            "press": "Mətbuat Konfransı",
+            "cookies": "Kukilər",
+            "privacy": "Gizlilik Siyasəti",
+            "details": "Göndərmə Məlumatları",
+            "map": "Saytın Xəritəsi"
+        },
+        "services": {
+            "title": "Xüsusi Xidmətlər",
+            "shopping": "Pulsuz Alış-Veriş",
+            "search": "Ətraflı Axtarış",
+            "help": "Kömək",
+            "location": "Mağaza Yerləşməsi",
+            "order": "Sifariş və Qayıtma",
+            "app": "Mobil Tətbiqlər"
+        },
+        "contact": {
+            "title": "Bizimlə Əlaqə",
+            "location": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
+            "phone": "+000-123-456-789",
+            "email": "contact@example.com"
+        },
+        "p": "©Wedesigntech Bütün Hüquqlar Qorunur"
+    },
+    "home": {
+        "hero": {
+            "cat": "PİŞİK",
+            "spanOne": "ƏN KEYFİYYƏTLİ",
+            "descOne": "Premium Pişik Qidalarına 25% Endirim",
+            "dog": "İT",
+            "spanTwo": "25% ENDİRİMLƏ AL",
+            "descTwo": "Ev Heyvanları üçün Qidalandırıcı,Bir Kasa",
+            "bird": "QUŞ",
+            "spanThree": "YENİ GƏLƏNLƏR",
+            "descThree": "Premium Qarışıq Toxumlara 30% qənaət edin",
+            "foods": "QİDALARI",
+            "p": "Telles orchi ac auctor augue mauris augue cursus mattis molestie a iaculis at. Eu feugiat pretium nibh ipsum consequat.",
+            "btn": "İNDİ AL"
+        },
+        "services": {
+            "span": "DÜNYA SƏVİYYƏLİ XİDMƏTLƏR",
+            "title": "Tam Heyvan Baxımı Həlləri",
+            "desc": "Scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus laoreet. Risus quis varius quam quisque. Tempor nec feugiat nisl pretium fusce id.",
+            "ul": {
+                "liOne": {
+                    "title": "Heyvan Sığınacağı",
+                    "one": "Heyvanlar üçün otellər",
+                    "two": "Ev Baxımı",
+                    "three": "Heyvan Otelləri"
+                },
+                "liTwo": {
+                    "title": "Heyvan Baxıcılığı",
+                    "one": "Ev Baxımı",
+                    "two": "Gündüz Baxımı",
+                    "three": "Yaşamaqla Baxıcılıq"
+                },
+                "liThree": {
+                    "title": "Veterinar Baxımı",
+                    "one": "Daimi Yoxlama",
+                    "two": "Diş Baxımı",
+                    "three": "Vaksinasiya"
+                },
+                "liFour": {
+                    "title": "Gündüz Heyvan Baxımı",
+                    "one": "Evə əsaslanan",
+                    "two": "Ziyarət",
+                    "three": "Mərkəzə əsaslanan"
+                },
+                "p": "Quicque nec nisi ut velit bibendum interdum"
+            }
+        },
+        "timer": {
+            "title": "Eksklüziv  Quş Təklifi: 20% Endirim",
+            "p": "Tələsin! Təkliflər bitir:",
+            "days": "Gün",
+            "hrs": "Saat",
+            "mins": "Dəqiqə",
+            "secs": "Saniyə",
+            "btn": "İNDİ AL"
+        },
+        "offers": {
+            "span": "TƏKLİFLƏRLƏ AL",
+            "title": "Təkliflər zonamıza xoş gəlmisiniz",
+            "cards": [
+                {
+                    "title": "25% Endirim əldə edin",
+                    "code": "DOGFOODS01",
+                    "img": "dog",
+                    "cupon": "Kupon Kodu:",
+                    "btnColor": "#FFA028"
+                },
+                {
+                    "title": "Birini al, birini pulsuz əldə et",
+                    "code": "CATFOODS01",
+                    "img": "cat",
+                    "cupon": "Kupon Kodu:",
+                    "btnColor": "#00C9D5"
+                },
+                {
+                    "title": "Quş Günü Endirimləri",
+                    "code": "BIRDFOODS01",
+                    "img": "bird",
+                    "cupon": "Kupon Kodu:",
+                    "btnColor": "#E4266E"
+                }
+            ]
+        },
+        "plans": {
+            "span": "Büdcənizə Uyğun Qiymət Planları",
+            "title": "Sizin Büdcəniz, Sizin Seçiminiz",
+            "box": [
+                {
+                    "price": 8,
+                    "plan": "Əsas"
+                },
+                {
+                    "price": 8,
+                    "plan": "Gümüş"
+                },
+                {
+                    "price": 28,
+                    "plan": "Qızıl"
+                },
+                {
+                    "price": 35,
+                    "plan": "Platin"
+                }
+            ]
+        },
+        "brands": {
+            "title": "Etibarlı &  keyfiyyətli brendlər",
+            "box": [
+                {
+                    "brand": "brand1",
+                    "icon": "brandIcon1",
+                    "bg": "#D2FAFF"
+                },
+                {
+                    "brand": "brand2",
+                    "icon": "brandIcon2",
+                    "bg": "#FFD0E9"
+                },
+                {
+                    "brand": "brand3",
+                    "icon": "brandIcon3",
+                    "bg": "#E1FFD5"
+                },
+                {
+                    "brand": "brand4",
+                    "icon": "brandIcon4",
+                    "bg": "#bbc0ea"
+                },
+                {
+                    "brand": "brand5",
+                    "icon": "brandIcon5",
+                    "bg": "#FFD0E9"
+                },
+                {
+                    "brand": "brand6",
+                    "icon": "brandIcon6",
+                    "bg": "#E1FFD5"
+                },
+                {
+                    "brand": "brand7",
+                    "icon": "brandIcon7",
+                    "bg": "#bbc0ea"
+                }
+            ]
+        },
+        "awards": {
+            "title": "Qazandığımız Mükafatlar",
+            "box": [
+                {
+                    "icon": "award1"
+                },
+                {
+                    "icon": "award2"
+                },
+                {
+                    "icon": "award3"
+                },
+                {
+                    "icon": "award4"
+                },
+                {
+                    "icon": "award5"
+                },
+                {
+                    "icon": "award6"
+                }
+            ]
+        },
+        "feedback": {
+            "title": "20 mindən çox şəxs tərəfindən dəstəklənir",
+            "span": "MÜŞTƏRİ RƏYLƏRİ",
+            "cards": [
+                {
+                    "name": "Mariyah - Professor",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img1"
+                },
+                {
+                    "name": "Jessica - Müəllim",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img2"
+                },
+                {
+                    "name": "Laara - Hüquqşünas",
+                    "p": "Arcu ac tortor dignissim convallis. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Arcu cursus euismod quis viverra nibh cras pulvinar mattis.",
+                    "img": "img3"
+                }
+            ]
+        },
+        "mobile": {
+            "title": "Mobil Heyvan Mağazanız",
+            "span": "İNDİ YÜKLƏ",
+            "dowland": "Yüklə. Kəşf et. Həzz al",
+            "p": "Morbi tempus iaculis urna id volutpat lacus laoreet. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Nec dui nunc mattis enim ut. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis."
+        },
+        "animalcare": {
+            "grooming": "Ümumi Baxım",
+            "care": "Heyvan Baxımı",
+            "food": "Pişik Yeməyi",
+            "training": "Təlim",
+            "p": "Ut aliquam purus sit amet luctus venenatis magna Odio pellent."
+        }
+    },
+    "contact": {
+        "faqs": {
+            "span": "Tez-tez Verilən Suallar",
+            "title": "Ən çox verilən suallar",
+            "desc": "Nibh mauris cursus mattis molestie. Facilisi nullam vehicula ipsum a arcu cursus. Nec ultrices dui sapien eget mi proin sed libero. Tellus mattis pellentesque.",
+            "box": [
+                {
+                    "imgOne": "dogFour",
+                    "imgTwo": "catTwo",
+                    "title": "S. Mağazanızın iş saatları necədir?",
+                    "desc": "C. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#D2FAFF"
+                },
+                {
+                    "imgOne": "birdOne",
+                    "imgTwo": "birdTwo",
+                    "title": "S. Ev heyvanlarının qulluq xidmətlərini təklif edirsinizmi?",
+                    "desc": "C. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Habitant morbi trist.",
+                    "btnColor": "#FFD0E9"
+                },
+                {
+                    "imgOne": "catOne",
+                    "imgTwo": "catTwo",
+                    "title": "S. Sizdə heyvanların övladlığa götürülmə xidməti varmı?",
+                    "desc": "C. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#E1FFD5"
+                },
+                {
+                    "imgOne": "birdThree",
+                    "imgTwo": "dogThree",
+                    "title": "S. Pulsuz çatdırılma xidmətini təklif edirsinizmi?",
+                    "desc": "C. Briem ipsum dolor sit amet, consectetur adipisicing elit, sed do feugiat venenatis.",
+                    "btnColor": "#bbc0ea"
+                }
+            ]
+        },
+        "form": {
+            "title": "Slotunuzu Bron Edin",
+            "span": "BİZİMLƏ ƏLAQƏ",
+            "desc": "Vestibulum pharetra ilə əlaqədar qapını açın. Pellentesque ultrices elit effekti ilə təkmilləşdirilmişdir. Risus ilə əlaqəli məsələlərdə diqqətli olun.",
+            "address": "ÜNVAN",
+            "addDesc": "No: 58 A, East Madison Küçəsi, Baltimore, MD, ABŞ 4508",
+            "open": "BİZ AÇIĞIQ",
+            "openDesc": "Bazar ertəsi - Şənbə : 09:00-dan 19:00-a qədər, Bazar günü : Tətil",
+            "emailDesc": "contact@example.com / info@example.com",
+            "name": "Ad*",
+            "lastName": "Soyad*",
+            "email": "E-poçt*",
+            "number": "Telefon Nömrəsi*",
+            "message": "Mesajınız",
+            "btn": "MESAJI GÖNDƏR",
+            "error": "Zəhmət olmasa bu sahəni doldurun.",
+            "errMes": "❌ Bir və ya daha çox sahədə səhv var. Zəhmət olmasa yoxlayın və yenidən cəhd edin.",
+            "succes": "✅ Mesajınız üçün təşəkkür edirik. Mesaj göndərildi."
+        },
+        "app": {
+            "span": "Bizi telefonunuza yükləyin",
+            "title": "Tətbiqi yükləyərək xüsusi təkliflər əldə edin.",
+            "desc": "Zamanı idarə etmək və əsas məqsədlərə çatmaq üçün istifadə edilən üsulları öyrənin. Sizə daha yaxşı xidmət təqdim etmək üçün buradayıq."
+        }
+    },
+    "authPage": {
+        "name": "Tam Ad",
+        "email": "Email",
+        "pass": "Şifrə",
+        "confirmPass": "Şifrəni təsdiqləyin",
+        "signIn": "Daxil ol",
+        "signUp": "Hesab yaradın",
+        "back": "Xoş gəldiniz!",
+        "hi": "Salam, Dost!",
+        "social": "Qeydiyyat üçün emailinizi istifadə edin",
+        "p": "Şəxsi məlumatlarınızı daxil edin və bizimlə səyahətə başlayın",
+        "regux": "Şifrə 8 ilə 15 simvol arasında olmalıdır. A-Z, a-z, 0-9, @.#$!%*?&^",
+        "forget": "Şifrənizi unutmusunuz?",
+        "btnIn": "Daxil ol",
+        "btnUp": "Qeydiyyatdan keç",
+        "alert": {
+          "error": {
+            "passReg": "Şifrələr uyğun deyil!",
+            "mailReg": "Bu email artıq qeydiyyatdan keçib!",
+            "catch": "Nəsə səhv getdi!",
+            "mailLogin": "Email və ya şifrə yanlışdır!"
+          },
+          "success": {
+            "accaount": "Yeni hesab yaradıldı!",
+            "login": "Giriş uğurlu oldu!"
+          },
+          "warning": {
+            "inputReg": "Zəhmət olmasa, bütün sahələri doldurun",
+            "inputLogin": "Zəhmət olmasa, bütün məlumatları daxil edin",
+            "pass": "Şifrələr uyğun gəlmir"
+          }
+        }
+      }
+    
+}

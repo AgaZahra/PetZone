@@ -1,0 +1,19 @@
+@import '../assets/sass/style.scss';
+
+.select-language{
+    background-color: $LightCyan;
+    color:$DarkBlue !important;
+    border: none !important;
+    outline: none !important;
+    font-weight: bolder;
+    option{
+        background-color: $White;
+        color: $DarkBlue;
+        border: none;
+        outline: none;
+        padding: 0.3rem;
+     
+    }
+    
+    
+}

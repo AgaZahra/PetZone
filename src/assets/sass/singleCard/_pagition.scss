@@ -1,0 +1,29 @@
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .custom-pagination-item {
+    margin: 0 5px;
+    background-color: $DarkBlue;
+    color: #343a40;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $LightCyan;
+      color: #fff;
+    }
+
+    &.active {
+      background-color: $DarkBlue !important;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+footer {
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem;
+    color: $White;
+    background-color: $DarkBlue;
+
+    h4 {
+        width: 60%;
+        font-size: 2.7rem;
+        font-family: $secondary-font;
+        font-weight: bolder;
+
+        svg {
+            display: inline;
+        }
+    }
+
+    form {
+        border: 1px solid gray;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        margin: 1rem 0rem;
+
+        input {
+            background-color: $DarkBlue !important;
+            font-size: 1.4rem;
+            font-family: $primary-font;
+        }
+
+        button {
+            background-color: $StrongCyan;
+            padding: 0.5rem 2rem;
+            border-radius: 15px;
+            font-size: 1.1rem;
+
+            &:hover {
+                background-color: $Orange;
+                transition-duration: 0.5s;
+            }
+        }
+
+    }
+
+    h5 {
+        font-size: 1.8rem;
+        font-family: $secondary-font;
+        font-weight: bolder;
+    }
+
+    ul {
+        padding: 1rem;
+
+        li {
+            font-family: $secondary-font;
+            margin-top: 0.7rem;
+            cursor: pointer;
+            transition: all 0.6s ease-in-out;
+
+            svg {
+                display: inline;
+                font-size: 1.7rem;
+            }
+
+            &:hover {
+                color: $Orange;
+            }
+
+        }
+    }
+
+    .footer-bottom {
+        padding: 3rem 0rem 0rem 1rem;
+        border-top: 1px solid $White;
+
+        img {
+            width: 70%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: $secondary-font;
+            letter-spacing: 1px;
+
+        }
+
+        .btn-footer {
+            border: 1px solid $White !important;
+            padding: 0.8rem 1.8rem !important;
+            margin-right: 0.4rem;
+
+        }
+    }
+
+}

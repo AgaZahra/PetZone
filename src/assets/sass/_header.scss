@@ -1,0 +1,182 @@
+
+
+
+
+.my-navbar {
+    width: 100%;
+    padding: 0.8rem 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $LightCyan !important;
+
+    z-index: 1000; 
+    
+    .logo {
+        width: 11%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1.6rem;
+        .menu-item{
+            display: flex;
+            color: $DarkBlue !important;
+            font-weight: bolder;
+            font-size: 16px;
+            font-family: $primary-font;
+            &.active {
+                color: $StrongCyan !important;
+                border: none !important;
+            }
+            &:hover{
+                color: $StrongCyan !important;
+                transition-duration: 0.4s;
+                border: none !important;
+            }
+            .icon{
+                display: block;
+            }
+        }
+
+        .dropdown{
+             position: absolute;
+             z-index: 1010; 
+            border: 2px solid $StrongCyan;
+            }
+        }
+    }
+    .icon{
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        .icon-item{
+            color:$DarkBlue;
+            font-size: 1.4rem;
+            font-weight: bolder !important;
+            font-family: $primary-font;
+            .basket-icon{
+                position: absolute;
+                top: -15%;
+                left: 70%;
+                background-color: $Orange;
+                color: #fff;
+                font-weight: normal;
+                font-family: $primary-font;
+                padding: 0.1rem 0.4rem;
+                font-size: 0.7rem;
+                border-radius: 100px;
+                
+            }
+            .wishlist-icon{
+                position: absolute;
+                top: -15%;
+                right: -2%;
+                background-color: $Orange;
+                color: #fff;
+                font-weight: normal;
+                font-family: $primary-font;
+                padding: 0.1rem 0.4rem;
+                font-size: 0.7rem;
+                border-radius: 100px;
+                
+            }
+            &.active{
+                // color: inherit !important;  
+                color: $DarkBlue;
+            }
+            &:hover{
+                color: $StrongCyan !important;
+            }
+        }
+    }
+
+
+
+
+/* Mobil (Telefon) - 425px */
+@media (max-width: 426px) {
+    .my-navbar {
+        padding: 0.5rem;
+        width: 100%;
+        
+        .logo {
+            width: 30%;
+        }
+        
+        .menu {
+            display: flex;
+            align-items: start;
+        }
+        
+        .icon {
+            display: none;
+        }
+    }
+    .my-navbar .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0; /* Menyu sol tərəfdə başlayır */
+        width: 70%; /* Genişlik tam ekran */
+        height: 96vh;
+        background-color: red; /* Arxa fon rəngi */
+        z-index: 1000;
+        transform: translateX(100%); /* Menyu başlanğıcda sol tərəfdə gizlədilmiş */
+        transition: transform 0.3s ease-in-out; /* Animasiya müddəti */
+    }
+
+    .my-navbar .navbar-collapse.show {
+        transform: translateX(0); /* Menyu açıldığında tam ekran görünür */
+    }
+
+    .my-navbar .navbar-toggler {
+        position: relative;
+        z-index: 1001; /* Toggler elementinin z-index-i */
+    }
+
+    
+}
+
+/* Tablet - 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .my-navbar {
+        width: 100%;
+        
+        .logo {
+            width: 30%;
+        }
+        
+        .icon {
+            display: none;
+        }
+    }
+    
+}
+
+/* Desktop - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .my-navbar {
+        width: 100%;
+        
+        .logo {
+            width: 30%;
+        }
+        
+        .icon {
+            display: none;
+        }
+    }
+}
+
+/* Masaüstü - 1025px və yuxarı */
+@media (min-width: 1025px) {
+    .my-navbar {
+        /* Desktop üçün tərtibat */
+    }
+}
