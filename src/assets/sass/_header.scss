@@ -1,182 +1,250 @@
-
-
-
+@import './mixins';
 
 .my-navbar {
     width: 100%;
-    padding: 0.8rem 2.1rem;
+    padding: 0.8rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $LightCyan !important;
-
+    background-color: var(--light-cyan); /* Light mode */
+    
     z-index: 1000; 
     
+    &.chakra-ui-dark {
+        background-color: var(--dark-blue); /* Dark mode background */
+    }
+
     .logo {
-        width: 11%;
+        // width: 11%;
         img {
             width: 100%;
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
-        gap: 1.6rem;
-        .menu-item{
+        gap: 2rem;
+
+        .menu-item {
             display: flex;
-            color: $DarkBlue !important;
+            color: var(--dark-blue); /* Light mode color */
             font-weight: bolder;
-            font-size: 16px;
+            font-size: 18px;
             font-family: $primary-font;
+
             &.active {
                 color: $StrongCyan !important;
-                border: none !important;
+                /* Light mode active color */
             }
-            &:hover{
-                color: $StrongCyan !important;
+
+            &:hover {
+                color: $StrongCyan; /* Light mode hover color */
                 transition-duration: 0.4s;
-                border: none !important;
             }
-            .icon{
+
+            .icon {
                 display: block;
+                position: relative;
             }
         }
 
-        .dropdown{
-             position: absolute;
-             z-index: 1010; 
-            border: 2px solid $StrongCyan;
-            }
+        .dropdown {
+            border: 2px solid $DarkBlue;
         }
     }
-    .icon{
+
+    .icon {
         position: relative;
         display: flex;
-        gap: 1rem;
-        .icon-item{
-            color:$DarkBlue;
+        gap: 1.1rem;
+        .search-icon {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            position: relative;
+            top: .4rem;
+            color: var(--dark-blue); /* Light mode color */
+        }
+
+        .icon-item {
+            color: var(--dark-blue); /* Light mode color */
             font-size: 1.4rem;
             font-weight: bolder !important;
             font-family: $primary-font;
-            .basket-icon{
+
+            .basket-icon, .wishlist-icon {
                 position: absolute;
-                top: -15%;
-                left: 70%;
-                background-color: $Orange;
+                top: -10%;
+                background-color: var(--orange);
                 color: #fff;
                 font-weight: normal;
                 font-family: $primary-font;
                 padding: 0.1rem 0.4rem;
                 font-size: 0.7rem;
                 border-radius: 100px;
-                
+                cursor: pointer;
             }
-            .wishlist-icon{
-                position: absolute;
-                top: -15%;
-                right: -2%;
-                background-color: $Orange;
-                color: #fff;
-                font-weight: normal;
-                font-family: $primary-font;
-                padding: 0.1rem 0.4rem;
-                font-size: 0.7rem;
-                border-radius: 100px;
-                
+
+            .basket-icon {
+                left: 78%;
             }
-            &.active{
-                // color: inherit !important;  
-                color: $DarkBlue;
+
+            .wishlist-icon {
+                right: 0%;
             }
-            &:hover{
-                color: $StrongCyan !important;
+            &.active {
+                color: var(--dark-blue); /* Light mode active color */
             }
+
+            
         }
     }
 
-
-
-
-/* Mobil (Telefon) - 425px */
-@media (max-width: 426px) {
-    .my-navbar {
-        padding: 0.5rem;
-        width: 100%;
-        
-        .logo {
-            width: 30%;
-        }
-        
-        .menu {
-            display: flex;
-            align-items: start;
-        }
-        
-        .icon {
-            display: none;
-        }
-    }
-    .my-navbar .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: 0; /* Menyu sol tərəfdə başlayır */
-        width: 70%; /* Genişlik tam ekran */
-        height: 96vh;
-        background-color: red; /* Arxa fon rəngi */
-        z-index: 1000;
-        transform: translateX(100%); /* Menyu başlanğıcda sol tərəfdə gizlədilmiş */
-        transition: transform 0.3s ease-in-out; /* Animasiya müddəti */
-    }
-
-    .my-navbar .navbar-collapse.show {
-        transform: translateX(0); /* Menyu açıldığında tam ekran görünür */
-    }
-
-    .my-navbar .navbar-toggler {
+    .language-switcher {
+        z-index: 1;
         position: relative;
-        z-index: 1001; /* Toggler elementinin z-index-i */
+        cursor: pointer;
+ }
+
+    .dropdown .dropdown-toggle::after {
+        display: none !important;
     }
 
+    .dropdown,
+    .dropdown *,
+    .btn-check:checked + .btn, 
+    .btn.active {
+        background-color: transparent !important;
+        color: var(--dark-blue) !important; /* Light mode color */
+        border: none !important;
+    }
+
+    .dropdown .dropdown-menu {
+        border: 1px solid !important;
+        background-color: var(--white) !important;
+    }
+
+    .users-name {
+        color: var(--dark-blue); /* Light mode color */
+        font-family: $secondary-font;
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 0.3rem;
+    }
+
+    .user-icon {
+        position: relative;
+        top: .1rem;
+        cursor: pointer;
+    }
+    .icon-mode{
+        position: relative;
+        top:.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .search {
+        color: $DarkBlue; /* Light mode color */
+        font-family: $secondary-font;
+        cursor: pointer;
+
+        .btn-close {
+            background-color:$LightCyan;
+            border: 1px solid var(--dark-blue);
+        }
+
+        .modal-content {
+            border: 2px solid var(--strong-cyan);
+            overflow: hidden;
+        }
+
+        .modal-body {
+            background-color: $LightCyan !important; /* Light mode background */
+            border-top: 2px solid var(--light-cyan);
+        }
+    }
+
+    .navbar-toggler{
+        border: none !important;
+        .navbar-toggler-icon{
+            color: var(--dark-blue) !important;
+        }
+       
+    }
+
+    @include sm{
+        
+        .menu{
+            height: 70vh !important;
+            display: block;
+            .menu-item{
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+        .icon{
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+            .icon-item{
+                margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,.basket-icon{
+            display: none !important;
+
+        }
+    }
+
+    @include md{
+        .menu{
+            height: 70vh !important;
+            display: block;
+            .menu-item{
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+        .icon{
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+            .icon-item{
+                margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,.basket-icon{
+            display: none !important;
+
+        }
+    }
+    @include lg{
+        .menu{
+            height: 61vh !important;
+            display: block;
+            .menu-item{
+                text-align: start !important;
+                width: 20% !important;
+            }
+        }
+        .icon{ 
+            margin: 0rem !important;
+            padding: 0rem !important;
+            flex-direction: row;
+            .icon-item{
+            margin-right: .5rem !important;
+            }
+        }
+
+        .wishlist-icon,.basket-icon{
+            display: none !important;
+
+        }
+    }
     
-}
-
-/* Tablet - 768px */
-@media (min-width: 426px) and (max-width: 768px) {
-    .my-navbar {
-        width: 100%;
-        
-        .logo {
-            width: 30%;
-        }
-        
-        .icon {
-            display: none;
-        }
-    }
-    
-}
-
-/* Desktop - 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .my-navbar {
-        width: 100%;
-        
-        .logo {
-            width: 30%;
-        }
-        
-        .icon {
-            display: none;
-        }
-    }
-}
-
-/* Masaüstü - 1025px və yuxarı */
-@media (min-width: 1025px) {
-    .my-navbar {
-        /* Desktop üçün tərtibat */
-    }
 }

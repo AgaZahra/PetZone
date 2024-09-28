@@ -9,11 +9,10 @@ import Swal from 'sweetalert2';
 import 'animate.css';
 
 const Users = () => {
-    const {t}=useTranslation();
+    const { t } = useTranslation();
     const dispatch = useDispatch();
     const [isActive, setIsActive] = useState(false);
     const [cookies, setCookie] = useCookies(['cookie-petshop']);
-    
     const [showPassword, setShowPassword] = useState(false);
     const [valitedPassword, setValitedPassword] = useState(false);
     const [passwordSignup, setPasswordSignup] = useState('');
@@ -36,81 +35,68 @@ const Users = () => {
     const registerSubmited = (e) => {
         e.preventDefault();
 
-        //  user data
         const userData = {
             fullname: fullname.current?.value,
             email: emailSignup.current?.value,
             password: passwordSignupRef.current?.value,
-            confirePassword: confirePassword.current?.value
+            confirePassword: confirePassword.current?.value,
         };
 
-        //  validation
         if (!userData.fullname || !userData.email || !userData.password || !userData.confirePassword) {
             Swal.fire({
                 title: t('authPage.alert.warning.inputReg'),
                 text: "",
                 icon: "warning",
                 showClass: {
-                    popup: `animate__animated animate__fadeInUp animate__faster`
+                    popup: `animate__animated animate__fadeInUp animate__faster`,
                 },
                 hideClass: {
-                    popup: `animate__animated animate__fadeOutDown animate__faster`
+                    popup: `animate__animated animate__fadeOutDown animate__faster`,
                 },
                 customClass: {
                     popup: 'my-popup-class',
                     title: 'my-title-class',
-                    confirmButton: 'my-confirm-button-class'
-                }
+                    confirmButton: 'my-confirm-button-class',
+                },
             });
             return;
         }
-     
+
         if (userData.password !== userData.confirePassword) {
             Swal.fire({
                 title: t('authPage.alert.warning.pass'),
                 text: "",
                 icon: "warning",
                 showClass: {
-                    popup: `animate__animated animate__fadeInUp animate__faster`
+                    popup: `animate__animated animate__fadeInUp animate__faster`,
                 },
                 hideClass: {
-                    popup: `animate__animated animate__fadeOutDown animate__faster`
+                    popup: `animate__animated animate__fadeOutDown animate__faster`,
                 },
                 customClass: {
                     popup: 'my-popup-class',
                     title: 'my-title-class',
-                    confirmButton: 'my-confirm-button-class'
-                }
+                    confirmButton: 'my-confirm-button-class',
+                },
             });
             return;
         }
 
-        // Validate password
         if (!validatePassword(userData.password)) {
             setValitedPassword(true);
             return;
         }
-        
-        setValitedPassword(false);
 
-        
+        setValitedPassword(false);
         dispatch(addUser(userData));
     };
 
     const loginSubmited = (e) => {
         e.preventDefault();
-        
+
         const loginData = {
             email: emailSignin.current?.value,
             password: passwordSignin.current?.value,
-            // messages: {
-            //     passRegisterError: t('authPage.alert.errorpassReg'),
-            //     mailRegisterError: t('authPage.alert.error.mailReg'),
-            //     mailLoginError: t('authPage.alert.error.mailLogin'),
-            //     loginSuccess: t('authPage.alert.success.loginSuccess'),
-            //     registerSuccess: t('authPage.alert.success.accaount'),
-            //     catchError: t('authPage.alert.error.catch')
-            // }
         };
 
         if (!loginData.email || !loginData.password) {
@@ -119,16 +105,16 @@ const Users = () => {
                 text: "",
                 icon: "warning",
                 showClass: {
-                    popup: `animate__animated animate__fadeInUp animate__faster`
+                    popup: `animate__animated animate__fadeInUp animate__faster`,
                 },
                 hideClass: {
-                    popup: `animate__animated animate__fadeOutDown animate__faster`
+                    popup: `animate__animated animate__fadeOutDown animate__faster`,
                 },
                 customClass: {
                     popup: 'my-popup-class',
                     title: 'my-title-class',
-                    confirmButton: 'my-confirm-button-class'
-                }
+                    confirmButton: 'my-confirm-button-class',
+                },
             });
             return;
         }
@@ -158,17 +144,16 @@ const Users = () => {
                             <a href="#" className="icon"><FaLinkedinIn /></a>
                         </div>
                         <span>{t('authPage.social')}</span>
-                            <label className="form-label">{t('authPage.name')}</label>
+                        <label className="form-label">{t('authPage.name')}</label>
                         <div className="form-input">
                             <input ref={fullname} type="text" placeholder={t('authPage.name')} />
                         </div>
-                            <label className="form-label">{t('authPage.mail')}</label>
+                        <label className="form-label">{t('authPage.mail')}</label>
                         <div className="form-input">
-                            <input ref={emailSignup} type="email" placeholder={t('authPage.mail')}/>
+                            <input ref={emailSignup} type="email" placeholder={t('authPage.mail')} />
                             <span><GoMail className='icon' /></span>
                         </div>
-                        
-                            <label className='form-label'>{t('authPage.pass')}</label>
+                        <label className='form-label'>{t('authPage.pass')}</label>
                         <div className="form-input">
                             <input
                                 ref={passwordSignupRef}
@@ -180,15 +165,13 @@ const Users = () => {
                                 {showPassword ? <FaEyeSlash className='icon' /> : <FaEye className='icon' />}
                             </span>
                         </div>
-                        
-                            <label className="form-label">{t('authPage.confirmPass')}</label>
+                        <label className="form-label">{t('authPage.confirmPass')}</label>
                         <div className="form-input">
                             <input ref={confirePassword} type="password" placeholder={t('authPage.confirmPass')} />
                         </div>
                         {valitedPassword && (
                             <p className='error-password'>{t('authPage.regux')}</p>
                         )}
-                        
                         <button type="submit">{t('authPage.btnIn')}</button>
                     </form>
                 </div>
@@ -204,28 +187,28 @@ const Users = () => {
                             <a href="#" className="icon"><FaLinkedinIn /></a>
                         </div>
                         <span>{t('authPage.social')}</span>
-                            <label className="form-label">{t('authPage.mail')}</label>
+                        <label className="form-label">{t('authPage.mail')}</label>
                         <div className="form-input">
-                            <input ref={emailSignin} type="email" placeholder={t('authPage.mail')}/>
+                            <input ref={emailSignin} type="email" placeholder={t('authPage.mail')} />
                             <span><GoMail className='icon' /></span>
                         </div>
-                            <label className="form-label">{t('authPage.pass')}</label>
-                            <div className="form-input">
+                        <label className="form-label">{t('authPage.pass')}</label>
+                        <div className="form-input">
                             <input
+                                ref={passwordSignin}
                                 type={showPassword ? 'text' : 'password'}
                                 placeholder={t('authPage.pass')}
-                                onChange={(e) => setPasswordSigninn(e.target.value)}
+                                onChange={(e) => setPasswordSignin(e.target.value)} // Düzəliş edildi
                             />
                             <span onClick={() => setShowPassword(!showPassword)}>
                                 {showPassword ? <FaEyeSlash className='icon' /> : <FaEye className='icon' />}
                             </span>
                         </div>
-                        
                         <a href="#">{t('authPage.forget')}</a>
                         <button type="submit">{t('authPage.btnIn')}</button>
                     </form>
                 </div>
-                
+
                 <div className="toggle-container">
                     <div className="toggle">
                         <div className="toggle-panel toggle-left">

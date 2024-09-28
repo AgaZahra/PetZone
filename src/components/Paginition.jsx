@@ -8,16 +8,22 @@ const Paginition = ({ currentPage, totalPages, onPageChange }) => {
     pageNumbers.push(i);
   }
 
+  // Səhifə dəyişdikdə top scroll etmək
+  const handlePageChange = (page) => {
+    onPageChange(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Yuxarıya keçid və smooth animasiyası
+  };
+
   return (
     <Pagination className="custom-pagination">
       <Pagination.First 
         className="custom-pagination-item" 
-        onClick={() => onPageChange(1)} 
+        onClick={() => handlePageChange(1)} 
         disabled={currentPage === 1} 
       />
       <Pagination.Prev 
         className="custom-pagination-item" 
-        onClick={() => onPageChange(currentPage - 1)} 
+        onClick={() => handlePageChange(currentPage - 1)} 
         disabled={currentPage === 1} 
       />
       
@@ -26,7 +32,7 @@ const Paginition = ({ currentPage, totalPages, onPageChange }) => {
           key={page}
           className="custom-pagination-item"
           active={page === currentPage}
-          onClick={() => onPageChange(page)}
+          onClick={() => handlePageChange(page)}
         >
           {page}
         </Pagination.Item>
@@ -34,12 +40,12 @@ const Paginition = ({ currentPage, totalPages, onPageChange }) => {
       
       <Pagination.Next 
         className="custom-pagination-item" 
-        onClick={() => onPageChange(currentPage + 1)} 
+        onClick={() => handlePageChange(currentPage + 1)} 
         disabled={currentPage === totalPages} 
       />
       <Pagination.Last 
         className="custom-pagination-item" 
-        onClick={() => onPageChange(totalPages)} 
+        onClick={() => handlePageChange(totalPages)} 
         disabled={currentPage === totalPages} 
       />
     </Pagination>

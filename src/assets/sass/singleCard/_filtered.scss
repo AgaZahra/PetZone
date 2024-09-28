@@ -1,0 +1,110 @@
+.filtered {
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.125);
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.5);
+
+    h5 {
+        font-family: var(--secondary-font);
+        font-weight: bolder;
+        font-size: 1.8rem;
+        color: var(--dark-blue);
+        text-align: center;
+        margin: 1rem;
+        background-color: #ecececdc;
+        border-radius: 20px;
+        padding: 0.5rem 0;
+    }
+
+    .my-list-title {
+        font-family: var(--secondary-font);
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--dark-blue);
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-family: var(--secondary-font);
+        }
+    }
+
+    ol {
+        .my-list {
+            display: block;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--dark-blue);
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 0.4rem 0.6rem;
+            width: 50%;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--dark-blue);
+            font-family: var(--secondary-font);
+            font-size: 0.9rem;
+        }
+    }
+
+    img {
+        border-radius: 50px;
+    }
+}
+
+.sort-options {
+    width: 30%;
+    padding: 1rem;
+    border: 2px solid var(--dark-blue);
+    border-radius: 50px;
+    position: relative;
+    left: 70%;
+    margin-bottom: 20px; 
+    text-align: center;
+    font-size: 1.1rem;
+    @include sm{
+        width: 100% !important;
+        position: static!important;
+        margin-top: 1rem !important;
+    }
+    @include md{
+        width: 50% ;
+        position: static;
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+    @include lg{
+        width: 50% ;
+        position: static;
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+    @include xl{
+        width: 50% ;
+        position: static;
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+
+
+    label, select {
+        border: none;
+        outline: none;
+        color: var(--dark-blue);
+        font-family: var(--secondary-font);
+        font-weight: bolder;
+        background-color: var(--white);
+        border-radius: 25px !important;
+    }
+
+    option {
+        padding: 0.5rem;
+    }
+}

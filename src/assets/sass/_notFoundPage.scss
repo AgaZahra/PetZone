@@ -1,6 +1,27 @@
 .not-found-page{
     padding: 3rem;
 
+    .btn {
+        font-family: $secondary-font;
+        color: $White;
+        background-color: $DarkBlue;
+        border: 1px solid $DarkBlue;
+        outline: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5rem;
+        transition-duration: 0.5s;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+      
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $Orange;
+        }
+      }
+
     img{
         width: 60%;
         margin: auto;

@@ -1,178 +1,140 @@
-import React, { useState } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../../assets/media/image/PetShop_Logo.svg';
-import { LuHeart, LuSearch } from "react-icons/lu";
 import { FiShoppingBag, FiUser } from 'react-icons/fi';
-import { FaRegCircleUser } from "react-icons/fa6";
+import { RiSearch2Line } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from '../../i18n/LanguageSwitcher';
-import { Menu, MenuButton, MenuList, MenuItem, useDisclosure, Box } from '@chakra-ui/react';
 import { useCart } from 'react-use-cart';
-import { useSelector } from 'react-redux';
-import { CiSearch } from 'react-icons/ci';
+import { useWishlist } from 'react-use-wishlist';
+import Logo from '../../assets/media/image/PetShop_Logo.svg';
+import { IoLogInOutline } from 'react-icons/io5';
+import LanguageSwitcher from '../../i18n/LanguageSwitcher';
+import ThemeToggle from '../../components/ThemeToggle';
 import slugify from 'slugify';
-
+import { useSelector } from 'react-redux';
+import { CiHeart } from 'react-icons/ci';
+import { FaRegHeart } from 'react-icons/fa';
 
 const Header = () => {
   const { t } = useTranslation();
-  const {totalItems}=useCart();
+  const { totalItems } = useCart();
+  const { items } = useWishlist();
+  const totalItemsWishlist = items.length;
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
+  const [keyword, setKeyword] = useState('');
+
   const products = useSelector((state) => state.product);
-  console.log(products);
-  
-  const[keyword,setKeyword]=useState("");
 
+  useEffect(() => {
+    const storedUsername = localStorage.getItem('username');
+    if (storedUsername) {
+      setIsLoggedIn(true);
+      setUsername(storedUsername);
+    }
+  }, []);
 
-// Menyu 1 üçün useDisclosure
-const { isOpen: isOpenShop, onOpen: onOpenShop, onClose: onCloseShop } = useDisclosure();
-// Menyu 2 üçün useDisclosure
-const { isOpen: isOpenPages, onOpen: onOpenPages, onClose: onClosePages } = useDisclosure();
-const { isOpen: isOpenUsers, onOpen: onOpenUsers, onClose: onCloseUsers } = useDisclosure();
+  const handleLogout = () => {
+    localStorage.removeItem('username');
+    setIsLoggedIn(false);
+    setUsername('');
+  };
 
   return (
-    <>
-      <Navbar bg="light" expand="lg" className='my-navbar'>
+    <Navbar expand="lg" className="my-navbar p-3">
+      <Navbar.Brand as={NavLink} to="/" className='logo'>
+        <img src={Logo} alt="Logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle onClick={()=>{
+          document.body.classList.toggle('no-scroll');
+      }} aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto menu">
+          <Nav.Link as={NavLink} to="/" className='menu-item'>
+            {t('header.home')}
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/shop" className='menu-item'>
+            {t('header.shop')}
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/about" className='menu-item'>
+            {t('about.header')}
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/faq" className='menu-item'>
+            {t('faq.name')}
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/contactus" className='menu-item'>
+            {t('header.contactus')}
+          </Nav.Link>
+        </Nav>
 
-        <Navbar.Brand as={NavLink} to="/" className='logo'>
-          <img src={Logo} alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="menu">
-            <Nav.Link as={NavLink} to="/" className='menu-item'>
-              {t("header.home")}
-            </Nav.Link>
-
-            <Menu isOpen={isOpenShop}  >
-              <Box onMouseEnter={onOpenShop} onMouseLeave={onCloseShop} >
-                <MenuButton as={NavLink} to="/shop" className='menu-item'>
-                  {t("header.shop")}
-                </MenuButton>
-                <MenuList className='dropdown' sx={{ zIndex: 99999 }}>
-                  <MenuItem as={NavLink} to="/shop/category1" className='menu-item dp-item'>
-                    test
-                  </MenuItem>
-                  <MenuItem as={NavLink} to="/shop/category2" className='menu-item dp-item'>
-                    test1
-                  </MenuItem>
-                </MenuList>
-              </Box>
-            </Menu>
-
-
-            <Nav.Link as={NavLink} to="/blog" className='menu-item'>
-              {t("header.blog")}
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/services" className='menu-item'>
-              {t("header.services")}
-            </Nav.Link>
-
-            <Menu isOpen={isOpenPages}>
-              <Box onMouseEnter={onOpenPages} onMouseLeave={onClosePages}>
-                <MenuButton as={NavLink} to="/about" className='menu-item '>
-                {t("header.pages")}  
-                </MenuButton>
-                <MenuList className='dropdown' sx={{ zIndex: 99999 }}>
-                  <MenuItem as={NavLink} to="/about" className='menu-item dp-item'>
-                    {t("header.about")}
-                  </MenuItem>
-                  <MenuItem as={NavLink} to="/faq" className='menu-item dp-item'>
-                    {t("header.faq")}
-                  </MenuItem>
-                </MenuList>
-              </Box>
-            </Menu>
-            <Nav.Link as={NavLink} to="/contactus" className='menu-item'>
-              {t("header.contactus")}
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-
-
-        <Nav className='icon'>
+        <Nav className='ms-auto icon'>
           <LanguageSwitcher />
+          <ThemeToggle />
+          
+          <Dropdown>
+            <Dropdown.Toggle className='menu-item'>
+              <FiUser className='icon icon-item user-icon' />
+              {isLoggedIn ? <span className='users-name'>{t('authPage.hiUsers')}, {username}</span> : null}
+            </Dropdown.Toggle>
+            <Dropdown.Menu className='dropdown-users'>
+              {!isLoggedIn ? (
+                <Dropdown.Item as={NavLink} to="/login" className='menu-item'>
+                  {t('authPage.btnIn')}/{t('authPage.btnUp')}
+                </Dropdown.Item>
+              ) : (
+                <Dropdown.Item onClick={handleLogout} className='menu-item'>
+                  {t('authPage.logout')} <IoLogInOutline className='icon' />
+                </Dropdown.Item>
+              )}
+            </Dropdown.Menu>
+          </Dropdown>
 
-          <Menu isOpen={isOpenUsers}  >
-              <Box onMouseEnter={onOpenUsers} onMouseLeave={onCloseUsers} >
-                <MenuButton as={NavLink} to="/authpage" className='menu-item'>
-                <FiUser className=' icon icon-item user-icon'/>
-                </MenuButton>
-                <MenuList className='dropdown' sx={{ zIndex: 99999 }}>
-                <MenuItem as={NavLink} to="/users" className='menu-item dp-item'>
-                    Sign In /Sign Up
-                  </MenuItem>
-                  <MenuItem as={NavLink} to="/productdashboard" className='menu-item dp-item'>
-                    P-Dasboard
-                  </MenuItem>
-                  <MenuItem as={NavLink} to="/categorydashboard" className='menu-item dp-item'>
-                    C-Dasboard
-                  </MenuItem>
-                </MenuList>
-              </Box>
-            </Menu>
-
-            <div>
-          <button type="button" className="btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ zIndex: 99999999}}>
-            <CiSearch />
-
-          </button>
-
-          <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h1 className="modal-title fs-5" id="exampleModalLabel">Search product</h1>
-                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
-                </div>
-                <div className="modal-body">
-                  <div className="input-group mb-3">
-                    <input onChange={e => { setKeyword(e.target.value) }} type="text" className="form-control" placeholder="Enter product name" />
-                    <button className="btn btn-warning" type="button" >Search</button>
-
+          <div className='search'>
+            <p data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <RiSearch2Line className='search-icon' />
+            </p>
+            <div className="modal" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h1 className="modal-title fs-5" id="exampleModalLabel">{t('search.title')}</h1>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                   </div>
-                  <ul className="list-group">
-                    {!keyword ? " " :
-                      products.filter(p => p.title.toLowerCase().includes(keyword)).map(item => (
-                        <Link className='a' to={`/products/${slugify(item.title)}`}>
-                          <li data-bs-dismiss="modal" key={item.id} className="list-group-item">
-                            <img src={item.imgOne} width={70} alt={item.title} />
-                            <span className='ms-3'>{item.title}</span>
-                          </li>
-                        </Link>
-                      ))}
-
-
-                  </ul>
-
+                  <div className="modal-body">
+                    <div className="input-group mb-3">
+                      <input onChange={e => setKeyword(e.target.value)} type="text" className="form-control" placeholder={t('search.input')} />
+                      <button className="btn btn-warning" type="button">{t('search.searchBtn')}</button>
+                    </div>
+                    <ul className="list-group">
+                      {!keyword ? " " :
+                        products.filter(p => p.title.toLowerCase().includes(keyword.toLowerCase())).map(item => (
+                          <Link className='a' to={`/products/${slugify(item.title)}`} key={item.id}>
+                            <li data-bs-dismiss="modal" className="list-group-item">
+                              <img src={item.imgOne} width={70} alt={item.title} />
+                              <span className='ms-3'>{item.title}</span>
+                            </li>
+                          </Link>
+                        ))
+                      }
+                    </ul>
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
-        </div>
 
-         
-          {/* <Nav.Link as={Link} to="/cart" className='icon-item'>
-            <LuSearch />
-          </Nav.Link> */}
-          <Nav.Link as={Link} to="/cart" className='icon-item'>
+          <Nav.Link as={NavLink} to="/cart" className='icon-item'>
             <FiShoppingBag />
-            <span className='basket-icon'>
-           {totalItems}
-          </span>
+            <span className='basket-icon'>{totalItems}</span>
           </Nav.Link>
-          <Nav.Link as={Link} to="/wishlist" className='icon-item'>
-            <LuHeart />
-            <span className='wishlist-icon'>
-           {totalItems}
-          </span>
+          <Nav.Link as={NavLink} to="/wishlist" className='icon-item'>
+          <FaRegHeart />
+            <span className='wishlist-icon'>{totalItemsWishlist}</span>
           </Nav.Link>
-          
-        
-
         </Nav>
-      </Navbar>
-    </>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

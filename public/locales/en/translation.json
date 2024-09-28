@@ -1,4 +1,6 @@
 {
+    "productLang": "en",
+    "categoryLang": "en",
     "notfound": {
         "title": "Oops! That Page Can't Be Found",
         "p": "We're Really Sorry but we can't seem to find the page you were looking for.",
@@ -17,8 +19,8 @@
         "blog": "Blog",
         "services": "Services",
         "pages": "Pages",
-        "about":"About",
-        "faq":"Faq",
+        "about": "About",
+        "faq": "Faq",
         "contactus": "Contact Us"
     },
     "footer": {
@@ -254,6 +256,10 @@
             "food": "Cat Food",
             "training": "Training",
             "p": "Ut aliquam purus sit amet luctus venenatis magna Odio pellent."
+        },
+        "category": {
+            "span": "PET NURITION",
+            "title": "Shop By Category"
         }
     },
     "contact": {
@@ -296,11 +302,11 @@
             "title": "Book Your Slot",
             "span": "CONTACT US",
             "desc": "Sed porta auctor vestibulum pharetra. Pellentesque ultrices orci id elit feugiat venenatis. Donec et pellentesque risus.",
-            "address":"ADDRESS",
-            "addDesc":"No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
-            "open":"WE ARE OPEN",
-            "openDesc":"Monday - Saturday : 09.00am to  7pm,Sunday : Holiday",
-            "emailDesc":"contact@example.com / info@example.com",
+            "address": "ADDRESS",
+            "addDesc": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
+            "open": "WE ARE OPEN",
+            "openDesc": "Monday - Saturday : 09.00am to  7pm,Sunday : Holiday",
+            "emailDesc": "contact@example.com / info@example.com",
             "name": " First Name*",
             "lastName": "Last Name*",
             "email": "Email*",
@@ -311,49 +317,181 @@
             "errMes": "❌ One or more fields have an error. Please check and try again.",
             "succes": "✅ Thank you for your message. It has been sent."
         },
-        "app":{
-            "span":"Get us on your hands",
-            "title":"Get Special Offers by Downloading the App.",
-            "desc":"Egestas sed tempus urna et pharetra pharetra massa massa. Quis viverra nibh cras pulvinar."
+        "app": {
+            "span": "Get us on your hands",
+            "title": "Get Special Offers by Downloading the App.",
+            "desc": "Egestas sed tempus urna et pharetra pharetra massa massa. Quis viverra nibh cras pulvinar."
         }
     },
-    "authPage":{
-        "name":"Full Name",
-        "mail":"Email",
-        "pass":"Password",
-        "confirmPass":"Confirm Password",
-        "signIn":"Sign In",
-        "signUp":"Create Account",
-        "back":"Welcome Back!",
-        "hi":"Hello, Friend!",
-        "social":"or use your email for registration",
-        "p":"Enter your personal details and start journey with us",
-        "regux":"Password must be between 8 and 15 characters. A-Z, a-z, 0-9, @.#$!%*?&^",
-        "forget":"Forget Your Password?",
-        "btnIn":"Sign In",
-        "btnUp":"Sign Up",
-         "alert":{
-            "error":{
-                "passReg":"Password is not equal!",
-                "mailReg":"This email is already registered!",
-                "mailLogin":"Email or password is wrong!",
-                "catch":"Something went wrong!"
-                
+    "authPage": {
+        "name": "Full Name",
+        "mail": "Email",
+        "pass": "Password",
+        "confirmPass": "Confirm Password",
+        "signIn": "Sign In",
+        "signUp": "Create Account",
+        "back": "Welcome Back!",
+        "hi": "Hello, Friend!",
+        "social": "or use your email for registration",
+        "p": "Enter your personal details and start journey with us",
+        "regux": "Password must be between 8 and 15 characters. A-Z, a-z, 0-9, @.#$!%*?&^",
+        "forget": "Forget Your Password?",
+        "btnIn": "Sign In",
+        "btnUp": "Sign Up",
+        "logout": "Logout",
+        "hiUsers": "Salam",
+        "alert": {
+            "error": {
+                "passReg": "Password is not equal!",
+                "mailReg": "This email is already registered!",
+                "mailLogin": "Email or password is wrong!",
+                "catch": "Something went wrong!"
             },
-            "success":{
-                "accaount":"New account has been created!",
-                "login":"Login is successful!"
-
+            "success": {
+                "accaount": "New account has been created!",
+                "login": "Login is successful!"
             },
-            "warning":{
-                "inputReg":"Please, fill in all fields",
-                "inputLogin":"Please, fill inputs",
-                "pass":"Passwords do not match"
+            "warning": {
+                "inputReg": "Please, fill in all fields",
+                "inputLogin": "Please, fill inputs",
+                "pass": "Passwords do not match"
             }
-
+        }
+    },
+    "shop": {
+        "name": "Shop",
+        "cat": "Filter by Category",
+        "product": "All Product",
+        "tag": "Filter by Tags",
+        "allTag": "All Tags",
+        "sort": {
+            "sort": "Sort by:",
+            "default": "Default Sorting",
+            "priceHigh": "Price: High to Low",
+            "priceLow": "Price: Low to High",
+            "az": "Title: A-Z",
+            "za": "Title: Z-A"
+        }
+    },
+    "singleCard": {
+        "cart": "Cart",
+        "modal": {
+            "category": "Category",
+            "tag": "Tag",
+            "stock": "in stock",
+            "size": "Size",
+            "addBtn": "Add to Cart",
+            "select": "SELECT OPTIONS",
+            "only": "Only",
+            "alertStock": "left in stock! Order soon!",
+            "ofStock": "Out of stock!"
+        },
+        "basket": {
+            "titleShop": "Your Shopping Cart",
+            "empty": "Your cart is currently empty!",
+            "back": "Back To Shop",
+            "image": "Image",
+            "title": "Tile",
+            "price": "Price",
+            "quantity": "Quantity",
+            "stock": "Stock",
+            "actions": "Actions",
+            "remove": "Remove Item",
+            "total": "Total",
+            "cartTotal": "Cart total",
+            "alert": {
+                "remove": "Do you really want to remove this item from the cart?",
+                "sure": "Are you sure?",
+                "yesBtn": "Yes, remove it!",
+                "noBtn": "No, keep it!",
+                "successRem": "Product successfully removed!",
+                "error": "Not enough stock!"
+            }
+        },
+        "wishlist": {
+            "name": "Wishlist",
+            "titleWish": "Your Wishlist",
+            "empty": "Your Wishlist is currently empty.",
+            "back": "Return To Shop",
+            "alert": "Product added to wishlist!"
+        },
+        "alert": {
+            "sorry": "Sorry",
+            "errorStock": "Product is out of stock!",
+            "errorLogIn": "Please log in to add items to the cart.",
+            "successAdd": "Product added to cart!"
+        }
+    },
+    "search": {
+        "title": "Search product",
+        "input": "Enter product name",
+        "searchBtn": "Search"
+    },
+    "faq": {
+        "name": "FAQ",
+        "accOne": {
+            "title": "1.Which symptoms might indicate an allergy in my dog?",
+            "desc": "Allergies in dogs can cause itching, scratching, and red or inflamed skin. Ear infections and sneezing are also common symptoms. Some dogs may develop watery eyes or a runny nose. In certain cases, digestive issues like vomiting or diarrhea may occur. Hair loss or bald patches can result from excessive scratching. If you notice these signs, it's a good idea to consult a vet."
+        },
+        "accTwo": {
+            "title": "2.How often should I bathe my pet?",
+            "desc": "The frequency of bathing your pet depends on factors like breed, coat type, and lifestyle. Generally, dogs should be bathed once every 4-6 weeks, but more active dogs or those with skin conditions may require more frequent baths. Cats typically groom themselves and may only need a bath if they become very dirty or have a medical condition. Overbathing can strip natural oils from your pet's skin, so it’s important to find a balance that suits their individual needs. Always use pet-safe shampoo to protect their skin and coat."
+        },
+        "accThree": {
+            "title": "3.How can I keep my cat from getting hairballs?",
+            "desc": "To prevent hairballs in your cat, regular brushing is essential to reduce loose fur. You can also feed them specialized hairball control food, which aids digestion. Hairball remedies like gels or treats can help pass ingested hair smoothly. Ensuring your cat drinks plenty of water promotes healthy digestion and reduces hairballs. Adding fiber to their diet can further support the process. If hairballs become a frequent issue, it’s best to consult your vet for advice."
+        },
+        "accFour": {
+            "title": "4.How often should my aquarium's water be changed?",
+            "desc": "Aquarium water should be changed regularly to maintain a healthy environment for your fish. Generally, it's recommended to change 10-20% of the water every 1-2 weeks. For heavily stocked tanks, more frequent changes may be necessary. Cleaning should also include removing debris and vacuuming the substrate. Avoid changing too much water at once, as this can disrupt the tank’s ecosystem. Always use dechlorinated or conditioned water to prevent harm to your fish, and monitor water parameters to ensure the tank stays balanced."
+        },
+        "accFive": {
+            "title": "5.If my fish seems unwell, what should I do?",
+            "desc": "If your fish seems unwell, start by observing its symptoms, such as lethargy or unusual swimming behavior. Next, check the water parameters for ammonia, nitrite, nitrate, pH, and temperature to ensure they are within safe ranges. If possible, isolate the sick fish in a quarantine tank to prevent spreading any potential disease. Research common diseases that match your fish’s symptoms to determine appropriate treatments. If symptoms persist or worsen, consult an aquatic veterinarian or an experienced aquarist for advice. Maintaining regular tank health through water changes and proper filtration is essential to support your fish's overall well-being."
+        },
+        "reach": "Reach us @"
+    },
+    "checkout": {
+        "title":"Checkout",
+        "header": "Contact information",
+        "p": "We'll use this email to send you details and updates about your order.",
+        "email": "Email Address",
+        "name": "Name",
+        "address": "Address",
+        "city": "City",
+        "country": "Country",
+        "postalCode": "Postal Code",
+        "cardDetails": "Card Details",
+        "cardNumber": "Card Number",
+        "expiry": "Expiry",
+        "cvc": "CVC",
+        "btn": "SUBMIT",
+        "total": "Total",
+        "alert":{
+            "empty":"Your cart is empty!",
+            "payment":"Processing Payment...",
+            "success":"Payment Successful!",
+            "successText":"Thank you for your purchase!"
+          },
+          "checkoutSuc":{
+            "header":"Thank you for your purchase.",
+            "title":"Your payment has been successfully completed.",
+            "favProduct":"Favorite products"
+          }
+    },
+    "about":{
+        "header":"About",
+        "span":"About Us",
+        "title":"Reasons to choose our pet store",
+        "p":"We offer an extensive range of high-quality pet supplies, ensuring your pet's needs are always met. Our store provides affordable options so you can give your pets the best care without overspending. Our trained staff is available to offer personalized recommendations to help you choose the right products for your pets.",
+        "call":"SCHEDULE A CALL",
+        "ul":{
+            "belt":"Puppy Belt",
+            "care":"Health Care",
+            "hygiene":"Pet Hygiene",
+            "food":"Nutritional Food",
+            "product":"Certified Products",
+            "salon":"Pet Salon"
         }
     }
-  
-
-
 }

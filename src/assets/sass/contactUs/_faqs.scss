@@ -27,8 +27,26 @@
             width: 55%;
             font-size: 1.1rem;
             font-family: $primary-font;
-            margin: 0 auto;
-            
+            margin: 0 auto; 
+        }
+        @include sm{
+             h3,p,span{
+                padding: 0rem !important;
+                margin: 0.3rem;
+                width: 100%;
+                text-align: start;
+            }
+            img{
+                margin: 0rem;
+            }
+        }
+        @include md{
+            p{
+               padding: 0rem !important;
+               margin: 0.3rem;
+               width: 100%;
+               text-align: start;
+           }
         }
     }
 

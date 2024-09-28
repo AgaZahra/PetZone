@@ -1,0 +1,127 @@
+@import '../mixins';
+.faq{
+    height: 200vh;
+    .title {
+        font-family: $secondary-font;
+        text-align: center;
+        img{
+            margin: auto;
+        }
+        h3 {
+            color: var(--dark-blue) !important;
+            font-size: 2.8rem;
+            font-family: $secondary-font;
+            font-weight: bolder;
+            margin: 1rem 0rem;
+        }
+    }
+
+    @include sm{
+        height:250vh!important;
+    }
+    @include md{
+        height: auto!important;
+    }
+    @include lg{
+        height: auto!important;
+    }
+    @include xl{
+        height: auto!important;
+    }
+
+    .chakra-icon{
+        font-size: 2.5rem;
+        color: $DarkBlue;
+        &:hover{
+            color: orange;
+            transition-duration: 0.6s;
+        }
+    }
+
+    .accardion-item{
+        border: none;
+        outline: none;
+        background-color: $LightApricot;
+        font-family: $secondary-font;
+        border-radius: 60px;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+       
+
+        .title{
+            color: $DarkBlue !important;
+            font-weight: bolder;
+            padding: 0.2rem;
+            font-size: 1.5rem;
+            text-align: start;
+
+            &:hover{
+                background-color: transparent !important;
+            }
+            @include sm{
+               font-size: 0.9rem;
+            }
+        }
+        .content{
+            font-size: 1.1rem;
+            @include md{
+                font-size: 0.8rem !important;
+            }
+        }
+        
+    }
+    .chakra-accordion__button:hover{
+        background-color: transparent;
+    }
+    .content{
+        position: relative;
+        img{
+            border-radius: 20px;
+        }
+        .reachUs{
+            position: absolute;
+            bottom: 1%;
+            left: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $LightApricot;
+            border-radius: 2rem;
+            height: 15vh;
+            p{
+                color: $DarkBlue;
+                font-weight: bolder;
+                font-size: 1.6rem;
+                font-family: $primary-font;
+            }
+            .icon{
+                color: orange;
+                font-size: 4rem;
+            }
+            img{
+                width: 35%;
+            }
+
+        }
+        @include sm{
+            .reachUs{
+                position: static;
+                margin-top: 0.5rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        @include sm{
+            .reachUs{
+                position: static;
+                margin-top: 0.5rem;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+    }
+
+}

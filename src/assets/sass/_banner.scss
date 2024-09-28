@@ -1,7 +1,8 @@
 .marquee {
     width: 100%;
     overflow: hidden;
-    background-color: $StrongCyan;
+    background-color: var(--strong-cyan);
+    border-bottom:1px solid  $StrongCyan;
     white-space: nowrap;
   }
   

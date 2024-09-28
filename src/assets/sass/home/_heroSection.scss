@@ -1,13 +1,83 @@
-
 .hero-section {
     position: relative;
     z-index: 1;
 
     .slider-container {
-        padding: 1rem 3rem !important;
-        background-color: $LightCyan;
+        padding: 0rem 3rem !important;
+        background-color: var(--light-cyan);
         padding: 0.6rem;
         cursor: pointer;
+        
+        @include sm{
+            padding: 0rem 0.5rem !important;
+            .slider{
+                padding: 3rem 0rem !important;
+                width: 100%;
+            }
+            .slider-content{
+               .right{
+                p{font-size: 0.2rem !important;}
+                .btn{
+                    font-size: 0.5rem !important;
+                    padding: .5rem 1rem !important;
+                    
+                }
+               }
+               .left{
+                   width: 100% !important;
+                   span{
+                    font-size: 0.4rem !important;
+                   }
+                h3{
+                    font-size: 1rem !important;
+                    width: 100% !important;
+                }
+               }
+               
+            }
+            h2{
+                width: 100% !important;
+                font-size: 1.5rem !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            // video{display: none !important;}
+        }
+        @include md{
+            padding: 0rem 0.5rem !important;
+            .slider{
+                padding: 3rem 0rem !important;
+                width: 100%;
+            }
+            .slider-content{
+               .right{
+                p{font-size: .5rem !important;}
+                .btn{
+                    font-size: 0.5rem !important;
+                    padding: .5rem 1rem !important;
+                    
+                }
+               }
+               .left{
+                   width: 100% !important;
+                   span{
+                    font-size: 0.4rem !important;
+                   }
+                h3{
+                    font-size: 1rem !important;
+                    width: 100% !important;
+                }
+               }
+               
+            }
+            h2{
+                font-size: 2rem !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            // video{display: none !important;}
+        }
+
 
         .slider {
             padding: 5rem 0rem;
@@ -19,15 +89,13 @@
             }
 
             h2 {
-                font-family: $secondary-font;
-                font-size: 9rem;
+                font-family: var(--secondary-font);
+                font-size: 6.9rem;
                 font-weight: bolder;
                 color: $StrongCyan;
                 letter-spacing: 1.5rem;
                 word-spacing: 2.5rem;
-                position: absolute;
-                top: 2%;
-                left: 18%;
+                text-align: center;
                 z-index: 1;
             }
 
@@ -42,14 +110,14 @@
                     width: 35% !important;
 
                     span {
-                        font-family: $primary-font;
-                        color: $DarkBlue;
+                        font-family: var(--primary-font);
+                        color: var(--dark-blue);
                         font-size: 0.7rem;
                     }
 
                     h3 {
-                        font-family: $secondary-font;
-                        color: $DarkBlue;
+                        font-family: var(--secondary-font);
+                        color: var(--dark-blue);
                         font-size: 4rem;
                         font-weight: bolder;
                     }
@@ -59,15 +127,15 @@
                     width: 25%;
 
                     p {
-                        font-family: $secondary-font;
-                        color: $DarkGray;
+                        font-family: var(--secondary-font);
+                        color: var(--dark-gray);
                         font-size: 1.2rem;
                     }
 
                     .btn {
-                        font-family: $secondary-font;
-                        color: $White;
-                        background-color: $DarkBlue;
+                        font-family: var(--secondary-font);
+                        color: var(--white);
+                        background-color: var(--dark-blue);
                         border: none;
                         outline: none;
                         font-size: 0.9rem;
@@ -81,36 +149,30 @@
                         &:hover,
                         &:focus,
                         &:active {
-                            background-color: $Orange;
+                            background-color: var(--orange);
                         }
                     }
-
                 }
-
             }
         }
     }
 
     .svg-container {
         position: absolute;
-        bottom:0;
+        bottom: 0;
         left: 0;
         z-index: 999 !important;
         width: 100%;
         height: auto;
-        border-bottom: 1.5rem solid $StrongCyan !important;
+        border-bottom: 1.5rem solid var(--strong-cyan) !important;
+        
         svg {
             width: 100%;
             height: auto;
-            fill: $StrongCyan !important;
+            fill: var(--strong-cyan) !important;
         }
     }
 }
-
-
-
-
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -121,76 +183,59 @@
 .swiper-button-next::after {
     content: '→' !important;
     font-size: 24px;
-    color: $DarkBlue !important;
-
+    color: var(--dark-blue) !important;
 }
 
 .swiper-button-prev::after {
     content: '←' !important;
     font-size: 24px;
-    color: $DarkBlue !important;
+    color: var(--dark-blue) !important;
 }
 
 
 
+// /* Mobil (Telefon) */
+// @media (max-width: 767px) {
+//     .slider-container {
+//         padding: 0.5rem !important;
+//         display: block;
 
+//         .slider {
+//             padding: 0 !important;
+//             position: static;
+//             display: block;
 
+//             h2 {
+//                 display: none;
+//             }
 
+//             video {
+//                 width: 100%;
+//             }
 
+//             .slider-content {
+//                 margin: 0;
+//                 padding: 0 !important;
+//                 width: 100%;
+//                 position: static;
+//                 display: block;
 
+//                 .left {
+//                     width: 100% !important;
+//                 }
 
+//                 .right {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
 
+// /* Tablet */
+// @media (min-width: 768px) and (max-width: 1023px) {}
 
-
-
-
-
-
-
-/* Mobil (Telefon) */
-@media (max-width: 767px) {
-    .slider-container {
-        padding: 0.5rem !important;
-        display: block;
-
-        .slider {
-            padding: 0 !important;
-            position: static;
-            display: block;
-
-            h2 {
-                display: none;
-            }
-
-            video {
-                width: 100%;
-            }
-
-
-            .slider-content {
-                margin: 0;
-                padding: 0 !important;
-                width: 100%;
-                position: static;
-                display: block;
-
-                .left {
-                    width: 100% !important;
-                }
-
-                .right {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    /* Desktop üçün tərtibat */
-}
+// /* Desktop */
+// @media (min-width: 1024px) {
+//     /* Desktop üçün tərtibat */
+// }

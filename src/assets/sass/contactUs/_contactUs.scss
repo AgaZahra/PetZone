@@ -1,94 +1,167 @@
 @import './faqs';
 @import './contactForm';
 
-
 .contact {
-   padding: 2rem;
+  padding: 2rem;
 
-    .title {
-        span {
-            color: $DarkBlue !important;
-            font-size: 0.9rem;
-            font-family: $secondary-font;
-            display: block;
-        }
-    
-        h3 {
-            color: $DarkBlue !important;
-            font-size: 3rem;
-            font-family: $secondary-font;
-            font-weight: bolder;
-            margin: 1rem 0rem;
-        }
-    
-        p {
-            font-size: 1.1rem;
-            font-family: $secondary-font;
-            
-        }
+  @include sm {
+    padding: 1rem;
+  }
+
+  .title {
+    span {
+      color: var(--dark-blue) !important;
+      font-size: 0.9rem;
+      font-family: var(--secondary-font);
+      display: block;
     }
 
-    .map{
-        height: 115vh;
+    h3 {
+      color: var(--dark-blue) !important;
+      font-size: 3rem;
+      font-family: var(--secondary-font);
+      font-weight: bolder;
+      margin: 1rem 0;
     }
 
-
-    .app{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $DarkBlue;
-        height: 60vh;
-        border-radius: 50px;
-        position: relative;
-        .content{
-            width: 35%;
-            position: absolute;
-            top: 20%;
-            left: 3%;
-            color: $White;
-            font-family: $secondary-font;
-            h4{
-                font-weight: bolder;
-                font-size: 3rem;
-            }
-            
-            
-        }
-        .app-box{
-            position: absolute;
-            top: 20%;
-            right: 10%;
-            img{
-                margin-bottom: 2rem;
-                width: 100%;
-            }
-        }
-
-        .icon-one {
-            position: absolute;
-            top: 70%;
-            right: 5%;
-            font-size: 3.5rem;
-            color: $Orange;
-            animation: spin 40s linear infinite; // Animasiya tətbiq olunur
-          }
-          .icon-two {
-            position: absolute;
-            top: 10%;
-            right: 25%;
-            font-size: 3rem;
-            color: $White;
-            animation: spin 40s linear infinite; // Animasiya tətbiq olunur
-          }
+    p {
+      font-size: 1.1rem;
+      font-family: var(--secondary-font);
     }
+  }
+
+  .map {
+    height: 115vh;
+
+    @include sm {
+      height: 50vh !important;
+      width: 100%;
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+
+  .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    height: 60vh;
+    border-radius: 50px;
+    position: relative;
+
+    @include sm {
+      height: auto;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @include md {
+      .cat-dog {
+        width: 40% !important;
+        margin: auto !important;
+      }
+    }
+
+    @include lg {
+      .cat-dog {
+        width: 50% !important;
+        margin: auto !important;
+      }
+    }
+
+    .content {
+      width: 35%;
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      color: var(--white);
+      font-family: var(--secondary-font);
+
+      h4 {
+        font-weight: bolder;
+        font-size: 3rem;
+      }
+
+      @include sm {
+        width: 100%;
+        display: block;
+        position: sticky;
+        padding: 0 !important;
+        margin: 0;
+
+        h4 {
+          font-size: 2.5rem;
+        }
+      }
+
+      @include md {
+        h4 {
+          font-size: 2rem;
+        }
+      }
+
+      @include lg {
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .app-box {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+
+      img {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      @include sm {
+        position: sticky;
+
+        img {
+          width: 50%;
+          margin: auto !important;
+        }
+      }
+
+      @include md {
+        img {
+          width: 50% !important;
+          margin-left: 50%;
+        }
+      }
+    }
+
+    .icon-one {
+      position: absolute;
+      top: 70%;
+      right: 5%;
+      font-size: 3.5rem;
+      color: var(--orange);
+      animation: spin 40s linear infinite; // Animasiya tətbiq olunur
+    }
+
+    .icon-two {
+      position: absolute;
+      top: 10%;
+      right: 25%;
+      font-size: 3rem;
+      color: var(--white);
+      animation: spin 40s linear infinite; // Animasiya tətbiq olunur
+    }
+  }
 }
 
 @keyframes spin {
-    0% {
-      transform: rotate(0deg); 
-    }
-    100% {
-      transform: rotate(360deg); 
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}

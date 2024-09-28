@@ -65,6 +65,28 @@ import award6 from '../../assets/media/image/awards-06.png';
                 navigation={true}
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"
+                breakpoints={{
+                    320: {
+                        // Ekran ölçüsü 576px (sm) və ya daha böyük
+                        slidesPerView: 1, // 2 kart göstər
+                        spaceBetween: 5, // Kartlar arası 20px boşluq olsun
+                      },
+                    428: {
+                      // Ekran ölçüsü 576px (sm) və ya daha böyük
+                      slidesPerView: 2, // 2 kart göstər
+                      spaceBetween: 5, // Kartlar arası 20px boşluq olsun
+                    },
+                    768: {
+                      // Ekran ölçüsü 768px (md) və ya daha böyük
+                      slidesPerView: 3, // 2 kart göstər
+                      spaceBetween: 10, // Kartlar arası 20px boşluq olsun
+                    },
+                    1200: {
+                      // Ekran ölçüsü 1200px (lg) və ya daha böyük
+                      slidesPerView: 4, // 4 kart göstər
+                      spaceBetween: 20, // Kartlar arası 20px boşluq olsun
+                    },
+                  }}
             >
 
                 {brands.box.map((item, index) => (
@@ -114,7 +136,30 @@ export const AwardsSection = () => {
                 direction="horizontal"
                 navigation={true}
                 modules={[Autoplay, Navigation]}
-                className="mySwiper">
+                className="mySwiper"
+                breakpoints={{
+                    320: {
+                        // Ekran ölçüsü 576px (sm) və ya daha böyük
+                        slidesPerView: 1, // 2 kart göstər
+                        spaceBetween: 5, // Kartlar arası 20px boşluq olsun
+                      },
+                    428: {
+                      // Ekran ölçüsü 576px (sm) və ya daha böyük
+                      slidesPerView: 2, // 2 kart göstər
+                      spaceBetween: 5, // Kartlar arası 20px boşluq olsun
+                    },
+                    768: {
+                      // Ekran ölçüsü 768px (md) və ya daha böyük
+                      slidesPerView: 3, // 2 kart göstər
+                      spaceBetween: 10, // Kartlar arası 20px boşluq olsun
+                    },
+                    1200: {
+                      // Ekran ölçüsü 1200px (lg) və ya daha böyük
+                      slidesPerView: 4, // 4 kart göstər
+                      spaceBetween: 20, // Kartlar arası 20px boşluq olsun
+                    },
+                  }}
+                >
 
                 {awards.box.map((item, index) => (
                     <SwiperSlide key={index}>

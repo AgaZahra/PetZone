@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { add } from "../../../tools/slices/categorySlice";
+import { Link } from "react-router-dom";
+
 
 const AddCategory = () => {
   const [icon, setIcon] = useState('');
@@ -30,8 +32,11 @@ const AddCategory = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center flex-column">
+    <div className="d-flex align-items-center justify-content-center flex-column m-5">
       <h1 className="my-5">Category Add</h1>
+      <Link to="/categorydashboard" className="btn btn-warning">
+        Back
+      </Link>
       <form className="col-4" onSubmit={sendData}>
       <div className="mb-3">
           <label className="form-label">Icon</label>

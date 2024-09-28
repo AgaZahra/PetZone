@@ -8,7 +8,11 @@
     a{
       text-decoration: none
     }
+    text-decoration: none !important;
   // border: 1px solid red !important;
+}
+body,html{
+  overflow-x: hidden;
 }
 
 
@@ -20,32 +24,31 @@
 @import './home/home';
 @import 'backToTop';
 @import 'authPage';
-@import './singleCard//card';
+@import './singleCard/card';
+@import './faq/faq';
+@import 'productDetails';
+@import 'checkout';
+@import 'about';
+@import 'mixins';
 
 
 
 //Contact-Us
 @import './contactUs/contactUs';
 
-.css-0{
-  border: none;
-}
-.user-icon{
-  position: relative;
-  top: .5rem;
-}
+
 
 
 .btn {
-  font-family: $secondary-font;
-  color: $White;
-  background-color: $DarkBlue;
-  border: 1px solid $DarkBlue;
+  font-family: var(--secondary-font);
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
   outline: none;
   font-size: 0.9rem;
   padding: 0.5rem 2rem;
   border-radius: 5rem;
-  transition-duration: 0.5s;
+  transition: background-color 0.5s, transform 0.3s; /* əlavə animasiya */
   cursor: pointer !important;
   position: relative;
   z-index: 999;
@@ -53,7 +56,8 @@
   &:hover,
   &:focus,
   &:active {
-      background-color: $Orange;
+    background-color: var(--orange);
+    transform: scale(1.05); /* hover zamanı düyməni bir az böyüt */
   }
 }
 
@@ -61,30 +65,32 @@
 .hero-container {
   position: relative;
   padding: 0 !important;
+
   .hero {
       width: 100%;
       height: 65vh;
-      background: linear-gradient(357deg, rgba(210, 250, 255, 1) 0%, rgba(210, 250, 255, 0.9248949579831933) 45%),
-          url('../../../../src/assets/media/image/image-bg.jpg');
+      background: var(--bg-gradient);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      h2{
-          color: $DarkBlue;
-          font-family: $secondary-font;
+      border-bottom: 5px solid var(--white);
+
+      h2 {
+          color: var(--dark-blue);
+          font-family: var(--secondary-font);
           font-weight: bolder;
           font-size: 3.5rem;
-         text-align: center;
-          padding-top: 5%;
-
-      }
-      h5{
-          color: $DarkBlue;
-          font-family: $secondary-font;
           text-align: center;
+          padding-top: 5%;
+      }
 
+      h5 {
+          color: var(--dark-blue);
+          font-family: var(--secondary-font);
+          text-align: center;
       }
   }
+
   .svg-container {
       position: absolute;
       bottom: 0;
@@ -92,19 +98,72 @@
       z-index: 999 !important;
       width: 100%;
       height: auto;
-      
+
       svg {
           width: 100%;
           height: auto;
-          fill: $White !important;
+          fill: var(--white) !important;
       }
   }
+}
 
+// hero-end
+
+
+//alet
+
+.my-popup-class{
+  background-color:#fcf7f5;
+  border:1px solid $DarkBlue;
+  border-radius: 3rem;
+
+}
+.my-confirm-button-class{
+  background-color:$White;
+  border: 2px solid $DarkBlue;
+  color: #fff;
+  background-color: $DarkBlue;
+  padding: 0.5rem 1.5rem;
+}
+.my-title-class{
+ color: $DarkBlue;
+ 
 }
 
 
 
+.modal-backdrop {
+  display: none;
+}
+.modal-open{
+  padding: 0rem !important;
+}
+.chakra-ui-light{
+  padding: 0rem !important;
+}
 
 
+//Table
 
-
+.table{
+  .head{
+    th{
+        color: $White;
+        background-color: $StrongCyan;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+  }
+  .body{
+    td{
+        color: $DarkBlue;
+        font-family: $primary-font;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        img{
+            margin: auto;
+        }
+    }
+   
+  }
+}

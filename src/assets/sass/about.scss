@@ -1,0 +1,95 @@
+.about {
+    .title {
+      font-family: var(--secondary-font);
+      color: var(--dark-blue);
+  
+      p {
+        font-size: 1.1rem;
+        color: var(--dark-blue) !important;
+        font-weight: normal !important;
+        text-align: start !important;
+      }
+  
+      span {
+        color: var(--dark-blue) !important;
+        font-size: 0.9rem;
+        font-family: var(--secondary-font);
+        margin-top: 0.5rem;
+        display: block;
+      }
+  
+      h3 {
+        color: var(--dark-blue) !important;
+        font-size: 2.8rem;
+        font-family: var(--secondary-font);
+        font-weight: bolder;
+        margin: 1rem 0;
+      }
+    }
+  
+    .right {
+      position: relative;
+  
+      .img-box {
+        overflow: hidden;
+  
+        img {
+          border-radius: 15%;
+        }
+      }
+  
+      .best-one {
+        position: absolute;
+        top: 6%;
+        right: -15%;
+        border: 1px solid var(--dark-blue);
+        border-radius: 10%;
+  
+        @include sm {
+          display: none;
+        }
+        
+        @include md {
+          display: none;
+        }
+      }
+    }
+  
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+  
+      ul {
+        li {
+          color: var(--dark-blue);
+          font-size: 1.3rem;
+          margin-bottom: 2rem;
+          font-family: var(--secondary-font);
+  
+          .about-icon {
+            display: inline;
+            margin-right: 0.5rem;
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  
+    p {
+      font-family: var(--secondary-font);
+      font-weight: bolder;
+      font-size: 2rem;
+      color: orange;
+      text-align: center;
+  
+      .call-icon {
+        display: inline;
+        margin-right: 0.8rem;
+        color: var(--dark-blue);
+        font-size: 3rem;
+      }
+    }
+  }
+  

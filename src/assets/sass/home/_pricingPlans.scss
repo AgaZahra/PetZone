@@ -1,18 +1,17 @@
 .pricing-plan {
-  height: 120vh;
-  padding: 2rem;
+  height: auto;
+  padding: 6rem 2rem;
   margin: auto;
 
   .title {
     text-align: center;
-    padding: 6rem 0rem;
 
     img {
       margin: auto;
     }
 
     span {
-      color: $DarkBlue !important;
+      color: var(--dark-blue) !important;
       font-size: 0.9rem;
       font-family: $secondary-font;
       margin-top: 1rem;
@@ -20,7 +19,7 @@
     }
 
     h3 {
-      color: $DarkBlue !important;
+      color: var(--dark-blue) !important;
       font-size: 2.8rem;
       font-family: $secondary-font;
       font-weight: bolder;
@@ -34,6 +33,20 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    @include sm{
+      display: block !important;
+      .box{
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+      }
+    }
+    @include md{
+      display: block !important;
+      .box{
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+      }
+    }
 
     .box {
       width: 25%;

@@ -1,96 +1,205 @@
-
 .timer {
     padding: 2rem;
-        background-color: $LightMint;
-        width: 100%;
-        height: 105vh;
+    background-color: var(--light-mint);
+    width: 100%;
+    height: 105vh;
+    position: relative;
+
+    @include sm{
+        height: auto !important;
+        padding: .5rem !important;
+        .left-content{
+            .btn{
+                width: 100% !important;
+                padding: 0.5rem !important;
+                font-size: 0.7rem !important;
+                margin-bottom: 5% !important;
+            }
+            h3{
+                width: 100% !important;
+                font-size: .8rem !important;
+                letter-spacing: 0rem !important;
+                word-spacing: 0rem !important;
+            }
+            .hurry-up{
+                width: 50% !important;
+                font-size: .4rem !important;
+                letter-spacing: 0rem !important;
+                word-spacing: 0rem !important;
+                margin: 0 !important;
+                padding: .4rem !important;
+            }
+            .time{
+                width: 100% !important;
+                padding: 2rem 9rem!important;
+                p{
+                    font-size: .5rem !important;
+                    padding: .5rem !important;
+                }
+                b{font-size: .8rem !important;}
+            }
+        }
+        .dog-image-one{
+            width: 40% !important;
+        }
+    }
+    
+    @include md{
+        height: auto !important;
+        padding: .5rem !important;
+        .left-content{
+            width: 100%;
+            text-align: center;
+            .btn{
+                width: 100% !important;
+                padding: 0.5rem !important;
+                font-size: 0.7rem !important;
+                margin-bottom: 5% !important;
+            }
+            h3{
+                width: 50% !important;
+                font-size: .7rem !important;
+                letter-spacing: 0rem !important;
+                word-spacing: 0rem !important;
+            }
+            .hurry-up{
+                width: 100% !important;
+                font-size: .5rem !important;
+                letter-spacing: 0rem !important;
+                word-spacing: 0rem !important;
+                margin: 0 !important;
+                padding: .4rem !important;
+            }
+            .time{
+                width: 100% !important;
+                padding: 2rem 9rem!important;
+                p{
+                    font-size: .5rem !important;
+                    padding: .5rem !important;
+                }
+                b{font-size: .8rem !important;}
+            }
+        }
+        .dog-image-one{
+            width: 40% !important;
+        }
+    }
+
+
+
+
+
+
+    .btn {
+        font-family: var(--secondary-font);
+        color: var(--white);
+        background-color: var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+        outline: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5rem;
+        transition-duration: 0.5s;
+        cursor: pointer !important;
         position: relative;
-        
-       .left-content{
+        z-index: 999;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--orange);
+        }
+    }
+
+    .left-content {
         width: 40%;
-        padding-top:8%;
+        padding-top: 8%;
         text-align: center;
-        .time{
+
+        .time {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 2rem 0rem;
-            
-            p,b{
-                font-family: $secondary-font;
+
+            p, b {
+                font-family: var(--secondary-font);
                 font-weight: bolder;
                 font-size: 2rem;
                 margin-left: 1rem;
-                color: $DarkBlue;
-                
+                color: var(--dark-blue);
             }
-            p{
+
+            p {
                 padding: 0.9rem 1.5rem;
-                background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.11817226890756305) 100%);
+                background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.11817226890756305) 100%);
                 border-radius: 2rem;
             }
         }
-        h3{
-            font-family: $secondary-font;
+
+        h3 {
+            font-family: var(--secondary-font);
             font-weight: bolder;
             font-size: 2.2rem;
             letter-spacing: 0.1rem;
             word-spacing: 0.6rem;
-            color: $DarkBlue;
+            color: var(--dark-blue);
             width: 80%;
             margin: auto;
         }
-        p{
-            font-family: $secondary-font;
+
+        p {
+            font-family: var(--secondary-font);
             font-size: 1.1rem;
             font-weight: bolder;
-            color: $DarkBlue;
+            color: var(--dark-blue);
             letter-spacing: 0.1rem;
             padding: 1.5rem;
         }
+    }
 
-       }
-        .dog-image-one {
-            width: 50%;
-            position: absolute;
-            top: -10%;
-            right: 10%;
-            transform: rotateY(-180deg) !important;
-            animation: dogImage 4s ease-in-out infinite;
+    .dog-image-one {
+        width: 50%;
+        position: absolute;
+        top: -10%;
+        right: 10%;
+        transform: rotateY(-180deg) !important;
+        animation: dogImage 4s ease-in-out infinite;
+    }
+
+    .dog-image-two {
+        width: 25%;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    .cat-image-three {
+        width: 10%;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    .sharp-svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        path {
+            fill: var(--white);
         }
-        .dog-image-two{
-            width: 25%;
-            position: absolute;
-            bottom: 0%;
-            right: 0%;
+    }
+}
 
-        }
-        .cat-image-three{
-            width: 10%;
-            position: absolute;
-            bottom: 0%;
-            right: 0%;
-
-        }
-        .sharp-svg {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-           path {
-              fill:$White; 
-            }
-          }
- }
-
-
- @keyframes dogImage{
+@keyframes dogImage {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     50% {
-      transform: translateX(-8px); // Bu 8px sağa hərəkət edir
+        transform: translateX(-8px); // Bu 8px sağa hərəkət edir
     }
     100% {
-      transform: translateX(0); // Sonra geri dönür
+        transform: translateX(0); // Sonra geri dönür
     }
-  }
+}

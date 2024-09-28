@@ -1,0 +1,131 @@
+.basket{
+
+
+.quantity-controls{
+    background-color: $DarkBlue;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    padding: 0.2rem 0rem;
+    border-radius: 5rem;
+    width: 80%;
+    cursor: pointer;
+    button,span{
+        margin: 0rem 1rem;
+        font-size: 1.2rem;
+    }
+ }
+
+ h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: $secondary-font;
+    color: var(--dark-blue);
+ }
+ h3{
+    width: 30%;
+    border: 2px solid $DarkBlue;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: $secondary-font;
+    color: $DarkBlue;
+    border-radius: 10px;
+    margin-top: 4rem;
+    span{
+    font-size: 2.5rem;
+    color:orange;
+    font-family: $primary-font;
+
+    }
+
+ }
+
+ .head{
+    th{
+        color: $White;
+        background-color: $StrongCyan;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+ }
+ .body{
+    td{
+        color: $DarkBlue;
+        font-family: $primary-font;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        img{
+            margin: auto;
+        }
+    }
+    .icon{
+        font-size: 1.8rem;
+        color: orange;
+        cursor: pointer;
+        margin: auto;
+    }
+ }
+ .cart-total-table{
+    th{
+        color: $White;
+        background-color: $StrongCyan;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+        td{
+            color: orange;
+            font-family: $primary-font;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }   
+    
+    }
+    .btn {
+        font-family: var(--secondary-font);
+        color: var(--white);
+        background-color: var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+        outline: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5rem;
+        transition: background-color 0.5s, transform 0.3s; /* əlavə animasiya */
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+      
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: var(--orange);
+          transform: scale(1.05); /* hover zamanı düyməni bir az böyüt */
+        }
+      }
+      
+
+}
+
+    
+ 
+ 
+.empty-cart{
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+    .icon{
+        display: block;
+        text-align: center;
+        margin: auto;
+        color: $Orange;
+        font-size: 10rem;
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 2.2rem;
+        color: $DarkBlue;
+    }
+}

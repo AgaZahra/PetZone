@@ -1,5 +1,10 @@
 @import'pagition';
 @import'pop';
+@import'basket';
+@import'wishlist';
+@import'filtered';
+
+
 
 
 .my-card {
@@ -9,6 +14,28 @@
     overflow: hidden;
     width: 100%;
     border-radius: 20px;
+    margin-bottom: 0.5rem;
+    .btn {
+        font-family: $secondary-font;
+        color: $White;
+        background-color: $DarkBlue;
+        border: 1px solid $DarkBlue;
+        outline: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5rem;
+        transition-duration: 0.5s;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+      
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $Orange;
+        }
+      }
+      
 
     .img-box {
         overflow: hidden;
@@ -41,6 +68,16 @@
             left: 30%;
             transition: all 0.5s ease-in-out;
             transform: translateY(100px);
+            @include sm{
+                width: 50% !important;
+                position: static !important;
+                margin: 0 auto !important;
+            }
+            @include lg{
+                width: 100% !important;
+                position: relative;
+                left: 25%;
+            }
         }
 
     }
@@ -52,6 +89,7 @@
         color: $DarkBlue;
         h3{
             font-weight: bolder;
+            font-size: 1.5rem;
         }
         
         p{
@@ -74,7 +112,6 @@
             font-size: 3.5rem;
             color: $DarkBlue;
             padding: 10px;
-            border-radius: 50px;
 
             &:hover {
                 color: $StrongCyan;
@@ -106,7 +143,33 @@
         }
     }
 
-    
-    
+}
+.custom-modal{
+    .btn {
+        font-family: $secondary-font;
+        color: $White;
+        background-color: $DarkBlue;
+        border: 1px solid $DarkBlue;
+        outline: none;
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5rem;
+        transition-duration: 0.5s;
+        cursor: pointer !important;
+        position: relative;
+        z-index: 999;
+      
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $Orange;
+        }
+      }
+      
+}
+
+.chakra-alert{
+    background-color: $DarkBlue !important;
+    color: $White !important;
 }
 

@@ -10,6 +10,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import FeedbackSection from './FeedbackSection';
 import MobileSection from './MobileSection';
 import AnimalCareSection from './AnimalCareSection';
+import CategoryFilter from './CategoryFilter';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
+    <CategoryFilter/>
     <ServicesSection/>
     <TimerSection/>
     <OffersSection/>

@@ -8,33 +8,15 @@ import appstore from '../../assets/media/image/app-store-1.png';
 import playstore from '../../assets/media/image/playstore-1.png';
 import appBg from '../../assets/media/image/appstore-bg.png';
 import { FaStarOfLife } from 'react-icons/fa';
+import BannerPages from '../../components/BannerPages';
 
 
 const ContactUs = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="hero-container">
-        <div className="hero">
-          <h2>{t('header.contactus')}</h2>
-          <h5> <Link to='/'>{t('header.home')}</Link> - {t('header.contactus')} </h5>
-        </div>
-        <div className="svg-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 1920 250"
-            style={{ enableBackground: 'new 0 0 1920 250' }}
-            xmlSpace="preserve"
-          >
-            <path d="M1920,250V70.5c-9.9,13.6-157.3-38.5-360.8-21.5c-264.4,22.1-412.9,143.5-721.5,62.1C325-24,186.4-18,0,35.1V250h960h480 H1920z"></path>
-          </svg>
-        </div>
-      </div>
-      {/* Hero-End */}
 
+    <BannerPages itemOne={t('header.contactus')} itemTwo={t('header.home')} />
 
       <section className="contact">
         <Faqs />
@@ -70,19 +52,19 @@ const ContactUs = () => {
         </Row>
         {/* Map-End */}
 
-        <div className="app ">
+        <div className="app">
           <Row>
-            <Col sm={12} md={6} lg={3}>
+            <Col sm={12} md={12} lg={2}>
               <div className="content">
                 <span>{t('contact.app.span')}</span>
                 <h4>{t('contact.app.title')}</h4>
                 <p>{t('contact.app.desc')}</p>
               </div>
             </Col>
-            <Col sm={12} md={6} lg={8}>
-            <img src={appBg} alt="error" />
+            <Col sm={12} md={12} lg={8}>
+            <img src={appBg} alt="error"  className='cat-dog'/>
             </Col>
-            <Col sm={12} md={6} lg={3}>
+            <Col sm={12} md={12} lg={2}>
             <FaStarOfLife className='icon-one' />
             <FaStarOfLife className='icon-two' />
               <div className="app-box">

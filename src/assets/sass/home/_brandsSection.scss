@@ -32,6 +32,10 @@
                     overflow: hidden;
                     padding: 1.2rem 0rem;
                     transition: all 0.2s ease-in-out;
+                    @include sm{
+                        padding: 0 !important;
+                    }
+
 
                     img {
                         margin: auto;
@@ -55,6 +59,14 @@
         overflow: hidden;
         width: 100%;
         height: 65vh;
+        @include sm{
+            height: auto !important;
+            padding: 0 !important;
+        }
+        @include md{
+            height: auto !important;
+            padding: 0 !important;
+        }
         h2 {
             text-align: center;
             color: $DarkBlue !important;

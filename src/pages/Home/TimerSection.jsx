@@ -59,7 +59,7 @@ const TimerSection = () => {
     <Row >
         <Col sm={12} md={12} lg={4} className='left-content'>
         <h3>{t("home.timer.title")}</h3>
-        <p>{t("home.timer.p")}</p>
+        <p className='hurry-up'>{t("home.timer.p")}</p>
         <div className="time ">
             <p><span>{timeLeft.days}</span><br />{t("home.timer.days")}</p><b>:</b>
             <p><span>{timeLeft.hours}</span><br />{t("home.timer.hrs")}</p><b>:</b>

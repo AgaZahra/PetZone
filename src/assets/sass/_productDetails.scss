@@ -1,0 +1,67 @@
+.product-details{
+    .basket-details{
+        display: flex;
+        align-items: center;
+    
+        .card-icon {
+            font-weight: bolder;
+            font-size: 3.5rem;
+            color: $DarkBlue;
+            padding: 10px;
+            &:hover {
+                color: $StrongCyan;
+                transition-duration: 0.5s;
+            }
+          
+          }
+    
+    .quantity-controls{
+        background-color: $DarkBlue;
+        text-align: center;
+        color: #fff;
+        padding: 0.3rem 0rem;
+        border-radius: 5rem;
+        width: 25%;
+        cursor: pointer;
+        button,span{
+            margin: 0rem 1rem;
+            font-size: 1.2rem;
+        }
+     }
+    }
+    
+    img{
+        border: 2px solid $StrongCyan;
+        width: 80%;
+        border-radius:5%;
+    }
+    .my-card{
+        position: relative;
+        top: 10%;
+        background-color: $LightCyan !important;    
+        border: 2px dashed orange !important;
+        border-radius:5%;
+
+        
+        .card-title{
+            font-weight: bolder;
+            font-size: 2rem;
+            font-family: $secondary-font;
+            color: $DarkBlue;
+
+        }
+        
+        p{
+            font-weight: bolder;
+            font-size: 1.2rem;
+            font-family: $primary-font;
+             color: $DarkBlue;
+        }
+        #desc{
+            font-weight: normal !important;
+            
+        }
+    }
+    
+    
+}

@@ -44,7 +44,7 @@ const Faqs = () => {
 
             <Row className='my-2'>
                 {contact.faqs.box.map((box, index) => (
-                    <Col key={index} sm={12} md={4} lg={3} className='my-5'>
+                    <Col key={index} sm={12} md={6} lg={3} className='my-2'>
                         <div className="flip-box" >
                             <div className="flip-box-inner">
                                 <div className="flip-box-front" style={{ backgroundColor: darken(0.10, box.btnColor) }}>

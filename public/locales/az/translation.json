@@ -1,8 +1,10 @@
 {
+    "productLang": "az",
+    "categoryLang": "az",
     "notfound": {
         "title": "Üzr istəyirik! Bu Səhifəni Tapa Bilmirik",
         "p": "Bağışlayın, amma baxmaq istədiyiniz səhifəni tapa bilmirik.",
-        "btn": "ANA SƏHİFƏYƏ QAYID"
+        "btn": "GERI QAYID"
     },
     "banner": {
         "one": "50$-dan yuxarı sifarişlərdə çatdırılma pulsuzdur!",
@@ -17,8 +19,8 @@
         "blog": "Bloq",
         "services": "Xidmətlər",
         "pages": "Səhifələr",
-        "about":"Haqqımızda",
-        "faq":"Faq",
+        "about": "Haqqımızda",
+        "faq": "Faq",
         "contactus": "Əlaqə"
     },
     "footer": {
@@ -70,7 +72,7 @@
         },
         "services": {
             "span": "DÜNYA SƏVİYYƏLİ XİDMƏTLƏR",
-            "title": "Tam Heyvan Baxımı Həlləri",
+            "title": "Heyvan Baxımı ",
             "desc": "Scelerisque felis imperdiet proin fermentum. Tempus iaculis urna id volutpat lacus laoreet. Risus quis varius quam quisque. Tempor nec feugiat nisl pretium fusce id.",
             "ul": {
                 "liOne": {
@@ -101,7 +103,7 @@
             }
         },
         "timer": {
-            "title": "Eksklüziv  Quş Təklifi: 20% Endirim",
+            "title": "Eksklüziv Heyvan Qidaları Təklifi: 20% Endirim",
             "p": "Tələsin! Təkliflər bitir:",
             "days": "Gün",
             "hrs": "Saat",
@@ -121,7 +123,7 @@
                     "btnColor": "#FFA028"
                 },
                 {
-                    "title": "Birini al, birini pulsuz əldə et",
+                    "title": "Birini al, birini hədiyyə qazan",
                     "code": "CATFOODS01",
                     "img": "cat",
                     "cupon": "Kupon Kodu:",
@@ -254,6 +256,10 @@
             "food": "Pişik Yeməyi",
             "training": "Təlim",
             "p": "Ut aliquam purus sit amet luctus venenatis magna Odio pellent."
+        },
+        "category": {
+            "span": "HEYVAN QİDALARI",
+            "title": "Kateqoriyalara görə alış-veriş"
         }
     },
     "contact": {
@@ -293,7 +299,7 @@
             ]
         },
         "form": {
-            "title": "Slotunuzu Bron Edin",
+            "title": "Öncədən Bron Edin",
             "span": "BİZİMLƏ ƏLAQƏ",
             "desc": "Vestibulum pharetra ilə əlaqədar qapını açın. Pellentesque ultrices elit effekti ilə təkmilləşdirilmişdir. Risus ilə əlaqəli məsələlərdə diqqətli olun.",
             "address": "ÜNVAN",
@@ -332,23 +338,161 @@
         "forget": "Şifrənizi unutmusunuz?",
         "btnIn": "Daxil ol",
         "btnUp": "Qeydiyyatdan keç",
+        "logout": "Hesabdan Çıxın",
+        "hiUsers": "Salam",
         "alert": {
-          "error": {
-            "passReg": "Şifrələr uyğun deyil!",
-            "mailReg": "Bu email artıq qeydiyyatdan keçib!",
-            "catch": "Nəsə səhv getdi!",
-            "mailLogin": "Email və ya şifrə yanlışdır!"
-          },
-          "success": {
-            "accaount": "Yeni hesab yaradıldı!",
-            "login": "Giriş uğurlu oldu!"
-          },
-          "warning": {
-            "inputReg": "Zəhmət olmasa, bütün sahələri doldurun",
-            "inputLogin": "Zəhmət olmasa, bütün məlumatları daxil edin",
-            "pass": "Şifrələr uyğun gəlmir"
-          }
+            "error": {
+                "passReg": "Şifrələr uyğun deyil!",
+                "mailReg": "Bu email artıq qeydiyyatdan keçib!",
+                "catch": "Nəsə səhv getdi!",
+                "mailLogin": "Email və ya şifrə yanlışdır!"
+            },
+            "success": {
+                "accaount": "Yeni hesab yaradıldı!",
+                "login": "Giriş uğurlu oldu!"
+            },
+            "warning": {
+                "inputReg": "Zəhmət olmasa, bütün sahələri doldurun",
+                "inputLogin": "Zəhmət olmasa, bütün məlumatları daxil edin",
+                "pass": "Şifrələr uyğun gəlmir"
+            }
         }
-      }
-    
+    },
+    "shop": {
+        "name": "Mağaza",
+        "cat": "Kateqoriya üzrə Filtr",
+        "product": "Bütün Məhsullar",
+        "tag": "Etiketlər üzrə Filtr",
+        "allTag": "Bütün Etiketlər",
+        "sort": {
+            "sort": "Sıralama:",
+            "default": "Varsayılan Sıralama",
+            "priceHigh": "Qiymət: Yüksəkdən Aşağıya",
+            "priceLow": "Qiymət: Aşağıdan Yüksəyə",
+            "az": "Başlıq: A-Dan Z-Yə",
+            "za": "Başlıq: Z-Dan A-Yə"
+        }
+    },
+    "singleCard": {
+        "cart": "Səbət",
+        "modal": {
+            "category": "Kateqoriya",
+            "tag": "Etiket",
+            "stock": "anbarda",
+            "size": "Ölçü",
+            "addBtn": "Səbətə əlavə et",
+            "select": "SEÇİM EDİN",
+            "only": "Yalnız",
+            "alertStock": "anbarda qalıb! Tez sifariş edin!",
+            "ofStock": "Anbarda yoxdur!"
+        },
+        "basket": {
+            "titleShop": "Sizin Alış Səbətiniz",
+            "empty": "Sizin səbətiniz hazırda boştur!",
+            "back": "Dükkan'a Qayıt",
+            "image": "Şəkil",
+            "title": "Başlıq",
+            "price": "Qiymət",
+            "quantity": "Miqdar",
+            "stock": "Anbar",
+            "actions": "Əməliyyatlar",
+            "remove": "Məhsulu Sil",
+            "total": "Cəm",
+            "cartTotal": "Səbət cəmi",
+            "alert": {
+                "remove": "Bu məhsulu səbətdən çıxarmaq istədiyinizə əminsiniz?",
+                "sure": "Əminsiniz?",
+                "yesBtn": "Bəli, çıxarın!",
+                "noBtn": "Xeyr, saxlayın!",
+                "successRem": "Məhsul uğurla çıxarıldı!",
+                "error": "Kifayət qədər məhsul yoxdur!"
+            }
+        },
+        "wishlist": {
+            "name": "İstək Siyahısı",
+            "titleWish": "Sizin İstək Siyahınız",
+            "empty": "Sizin istək siyahınız hazırda boştur.",
+            "back": "Dükkan'a Qayıt",
+            "alert": "Məhsul istək siyahısına əlavə olundu!"
+        },
+        "alert": {
+            "sorry": "Bağışlayın",
+            "errorStock": "Məhsul anbarda yoxdur!",
+            "errorLogIn": "Zəhmət olmasa, məhsulu səbətə əlavə etmək üçün daxil olun.",
+            "successAdd": "Məhsul səbətə əlavə olundu!"
+        }
+    },
+    "search": {
+        "title": "Məhsul axtarışı",
+        "input": "Məhsul adını daxil edin",
+        "searchBtn": "Axtarış"
+    },
+    "faq": {
+        "name": "FAQ",
+        "accOne": {
+            "title": "1. İtimdə allergiya olduğunu hansı simptomlar göstərə bilər?",
+            "desc": "İtlərdə allergiya qaşınma, qaşınma və qızarmış və ya iltihablanmış dəriyə səbəb ola bilər. Qulaq infeksiyaları və asqırma da yaygın simptomlardır. Bəzi itlərdə göz yaşarması və ya burun axması inkişaf edə bilər. Bəzi hallarda həzm problemləri, məsələn, qusma və ya ishal baş verə bilər. Həddindən artıq qaşıma nəticəsində saç tökülməsi və ya keçəllik görünə bilər. Bu əlamətləri müşahidə edirsinizsə, baytarla məsləhətləşmək yaxşıdır."
+        },
+        "accTwo": {
+            "title": "2. Ev heyvanımı nə qədər tez-tez çimmələm?",
+            "desc": "Ev heyvanınızı nə qədər tez-tez çimməli olduğunuz onun cinsi, kürk tipi və həyat tərzi kimi faktorlardan asılıdır. Ümumiyyətlə, itlər 4-6 həftədə bir dəfə çimməlidir, lakin daha aktiv itlər və ya dəri problemləri olanlar daha tez-tez çimməyə ehtiyac duyurlar. Pişiklər adətən özlərini təmizləyir və yalnız çox çirkli olduqda və ya tibbi vəziyyətləri olduqda çimməlidirlər. Çox tez-tez çimmək onların dərisindən təbii yağları götürə bilər, buna görə fərdi ehtiyaclarına uyğun balans tapmaq vacibdir. Həmişə onların dərisini və kürkünü qorumaq üçün ev heyvanlarına uyğun şampun istifadə edin."
+        },
+        "accThree": {
+            "title": "3. Pişiyimdə tüklərin yığılmasının qarşısını necə ala bilərəm?",
+            "desc": "Pişiyinizdə tüklərin yığılmasının qarşısını almaq üçün müntəzəm olaraq onu daramaq vacibdir ki, boş tükləri azaldasınız. Siz həmçinin həzm prosesinə kömək edən xüsusi tüklərin idarə olunması üçün yem verə bilərsiniz. Tüklərin rahat keçməsinə kömək edən jel və ya şirniyyat kimi vasitələrdən istifadə edə bilərsiniz. Pişiyinizin kifayət qədər su içməsi həzm sistemini sağlam saxlayır və tüklərin yığılmasını azaldır. Onların pəhrizinə lif əlavə etmək də bu prosesi dəstəkləyə bilər. Əgər tüklər tez-tez problem yaradırsa, məsləhət üçün baytarla məsləhətləşmək yaxşıdır."
+        },
+        "accFour": {
+            "title": "4. Akvariumumun suyu nə qədər tez-tez dəyişdirilməlidir?",
+            "desc": "Akvarium suyunu müntəzəm olaraq dəyişmək balıqlarınız üçün sağlam mühitin qorunması üçün vacibdir. Ümumiyyətlə, suyun 10-20%-i hər 1-2 həftədə bir dəyişdirilməsi tövsiyə olunur. Daha sıx akvariumlar üçün daha tez-tez dəyişikliklər tələb oluna bilər. Təmizlik həm də qalıqların çıxarılmasını və alt təbəqənin tozsoranlanmasını əhatə etməlidir. Birdən çox suyun dəyişdirilməsindən çəkinin, çünki bu, akvariumun ekosistemini poza bilər. Balıqlarınıza zərər verməmək üçün həmişə xlorlanmamış və ya kondisionerlə təmizlənmiş su istifadə edin və akvariumun balansını qorumaq üçün su parametrlərini izləyin."
+        },
+        "accFive": {
+            "title": "5. Əgər balığım xəstə görünürsə, nə etməliyəm?",
+            "desc": "Əgər balığınız xəstə görünürsə, əvvəlcə onun simptomlarını, məsələn, letarji və ya qeyri-adi üzmə davranışını müşahidə edin. Daha sonra ammonyak, nitrit, nitrat, pH və temperatur kimi su parametrlərini yoxlayın ki, onların təhlükəsiz diapazonlarda olduğuna əmin olun. Mümkünsə, xəstə balığı karantin akvariumuna izolyasiya edin ki, potensial xəstəliklərin yayılmasının qarşısını alın. Balığınızın simptomlarına uyğun gələn ümumi xəstəlikləri araşdırın və uyğun müalicəni müəyyənləşdirin. Əgər simptomlar davam edərsə və ya pisləşərsə, dəniz baytarı və ya təcrübəli akvaristdən məsləhət alın. Akvariumun sağlamlığını su dəyişiklikləri və düzgün filtrasiya ilə müntəzəm olaraq saxlamaq balığınızın ümumi sağlamlığı üçün vacibdir."
+        },
+        "reach": "Bizə müraciət edin @"
+    },
+    "checkout": {
+        "title": "Sifarişin tamamlanması",
+        "header": "Əlaqə məlumatları",
+        "p": "Sifarişiniz haqqında təfərrüatları və yenilikləri sizə göndərmək üçün bu emaildən istifadə edəcəyik.",
+        "email": "Email Ünvanı",
+        "name": "Ad",
+        "address": "Ünvan",
+        "city": "Şəhər",
+        "country": "Ölkə",
+        "postalCode": "Poçt Kodu",
+        "cardDetails": "Kart Məlumatları",
+        "cardNumber": "Kart Nömrəsi",
+        "expiry": "Son istifadə tarixi",
+        "cvc": "CVC",
+        "btn": "TƏSDİQLƏ",
+        "total": "Cəmi",
+        "alert": {
+            "empty": "Səbətiniz boşdur!",
+            "payment": "Ödəniş həyata keçirilir...",
+            "success": "Ödəniş uğurla tamamlandı!",
+            "successText": "Alışınıza görə təşəkkür edirik!"
+        },
+        "checkoutSuc": {
+            "header": "Alışınıza görə təşəkkür edirik.",
+            "title": "Ödəməniz uğurla tamamlandı.",
+            "favProduct": "Sevimli məhsullar"
+        }
+    },
+    "about": {
+    "header": "Haqqımızda",
+    "span": "Bizim Haqqımızda",
+    "title": "Ev heyvanı mağazamızı seçmək üçün səbəblər",
+    "p": "Biz ev heyvanınızın ehtiyaclarını qarşılamaq üçün yüksək keyfiyyətli geniş çeşidli ev heyvanı ləvazimatları təklif edirik. Mağazamızda sərfəli seçimlər mövcuddur, beləliklə, heyvanınıza ən yaxşı qayğını göstərərək çox xərc çəkmədən ona qulluq edə bilərsiniz. Təlim keçmiş əməkdaşlarımız, ev heyvanlarınız üçün düzgün məhsulları seçməkdə sizə fərdi tövsiyələr təqdim etməyə hazırdır.",
+    "call": "ZƏNG ÜÇÜN MÜRACİƏT EDİN",
+    "ul": {
+        "belt": "Yavru Kəməri",
+        "care": "Sağlamlıq Qulluğu",
+        "hygiene": "Ev Heyvanı Gigiyenası",
+        "food": "Qidalandırıcı Yemək",
+        "product": "Sertifikatlaşdırılmış Məhsullar",
+        "salon": "Ev Heyvanı Salonu"
+    }
+    }
+
 }

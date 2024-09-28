@@ -13,15 +13,13 @@ const productSlice = createSlice({
         },
         add: (state, action) => {
             const productadd = async () => {
-                const { error } = await supabase
-                    .from('petshop-products')
-                    .insert(action.payload);
-                if (error) {
-                    console.log(error);
+                const { err } = await supabase.from('petshop-products').insert(action.payload);
+                if (err) {
+                    console.log(err);
                 } else {
                     swal('Product added successfully', '', 'success');
                     setTimeout(() => {
-                        window.location.assign("/addproduct");
+                        window.location.assign("/productdashboard");
                     }, 2000);
                 }
             };
@@ -74,7 +72,7 @@ const productSlice = createSlice({
                 if (error) {
                     console.log(error);
                 } else {
-                    swal('Stock updated successfully', '', 'success');
+                    // swal('Stock updated successfully', '', 'success');
                 }
             };
             updateStock();

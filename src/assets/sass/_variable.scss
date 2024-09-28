@@ -14,6 +14,8 @@ $DarkGray:#232121;
 $White:#fff;
 $Black:#000;
 
+
+
 $box-colors:(
   1: #D2FAFF, 
   2: #FFD0E9, 
@@ -40,11 +42,58 @@ $btn-colors-offers: (
   3: #E4266E
 );
 
-
-
-
-
-
 //Font_family
 $primary-font: 'Readec Pro', sans-serif;
 $secondary-font: 'Fredoka', sans-serif;
+
+
+:root {
+  --strong-cyan: #00C9D5;
+  --light-cyan: #D2FAFF;
+  --dark-blue: #1D256B;
+  --orange: #FFA028;
+  --light-peach: #F4E1D3;
+  --light-apricot: #FFE1B5;
+  --light-mint: #E1FFD5;
+  --light-beige: #EFEEE8;
+  --light-pink: #FFD0E9;
+  --deep-pink: #E4266E;
+  --dark-gray: #232121;
+  --white: #fff;
+  --black: #000;
+  --bg-gradient: linear-gradient(
+    357deg,
+    rgba(210, 250, 255, 1) 0%,
+    rgba(210, 250, 255, 0.92) 45%),
+    url('../../../../src/assets/media/image/image-bg.jpg');
+  
+}
+
+/* Light Mode (chakra-ui-light) */
+.chakra-ui-light {
+    color: var(--dark-blue);
+}
+
+/* Dark Mode (chakra-ui-dark) */
+.chakra-ui-dark {
+  --strong-cyan: #1D256B; // Keep strong cyan same
+  --light-cyan: #1D256B; // Change for dark mode
+  --dark-blue: #FFFFFF; // Light color for text
+  --orange: #FFA028; // Keep same
+  --light-peach: #333; // Darker for contrast
+  --light-apricot: #FFF; // Light color for background
+  --light-mint: #1D256B; // Change as needed
+  --light-beige: #444; // Darker beige
+  --light-pink: #FFD0E9; // Keep same
+  --deep-pink: #E4266E; // Keep same
+  --dark-gray: #FFF; // Light color for contrast
+  --white: #1D256B; // Darker
+  --black: #fff; // Lighter for text
+  background-color: #1D256B;
+  --bg-gradient: linear-gradient(
+    357deg,
+    rgb(19, 116, 196) 0%,
+    rgba(12, 90, 154, 0.808) 45%),
+    url('../../../../src/assets/media/image/image-bg.jpg');
+  
+}

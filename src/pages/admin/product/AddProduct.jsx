@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { add } from "../../../tools/slices/productSlice";
+import { Link } from "react-router-dom";
+
 
 const AddProduct = () => {
   const [imgOne, setImgOne] = useState('');
@@ -54,8 +56,11 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center flex-column">
+    <div className="d-flex align-items-center justify-content-center flex-column m-5">
       <h1 className="my-5">Product Add</h1>
+      <Link to="/productdashboard" className="btn btn-warning">
+        Back
+      </Link>
       <form className="col-4" onSubmit={sendData}>
         <div className="mb-3">
           <label className="form-label">Image One</label>

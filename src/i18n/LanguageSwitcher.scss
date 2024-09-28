@@ -1,19 +1,66 @@
-@import '../assets/sass/style.scss';
+@import '../assets/sass/variable';
 
-.select-language{
-    background-color: $LightCyan;
-    color:$DarkBlue !important;
-    border: none !important;
-    outline: none !important;
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    font-family: $secondary-font;
     font-weight: bolder;
-    option{
-        background-color: $White;
-        color: $DarkBlue;
-        border: none;
+  
+    .dropdown {
+      display: flex;
+      align-items: center;
+      background-color: $LightCyan;
+      color: $DarkBlue;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: $LightCyan;
+        border: none !important;
         outline: none;
-        padding: 0.3rem;
-     
+      }
+  
+      .selected {
+        display: flex;
+        align-items: center;
+  
+        .flag-icon {
+          width: 20px;
+          height: auto;
+          margin-right: 5px;
+        }
+      }
     }
-    
-    
-}
+  
+    .dropdown-menu {
+      position: absolute;
+      background-color: white;
+      border: 1px solid $DarkBlue;
+      border-radius: 5px;
+      z-index: 99999;
+      margin-top: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+      .lang-option {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+  
+        &:hover {
+          background-color: $LightCyan;
+        }
+  
+        .flag-icon {
+          width: 20px;
+          height: auto;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  
+  

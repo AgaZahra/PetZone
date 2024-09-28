@@ -12,8 +12,10 @@
       border-radius: 20px;
       padding: 0;
       margin: auto; // Modalın mərkəzləşdirilməsini təmin edir
+      background-color: var(--white);
+      border: 1px solid var(--dark-blue); 
     }
-  
+    
     .modal-content-wrapper {
       display: flex;
       padding: 20px;
@@ -23,11 +25,41 @@
       margin-right: 20px;
       position: relative;
       flex: 1;
+      .modal-details-responsive{
+        display: none !important;
+        
+      }
+      @include sm{
+         img{
+          width: 20% !important;
+         }
+        .modal-details-responsive{
+          display: block !important;
+          width: 40%;
+          .quantity-controls{width: 42%;}
+          .btn{
+            display: block;
+          }
+        }
+      }
+      @include md{
+        img{
+         width: 25% !important;
+        }
+       .modal-details-responsive{
+         display: block !important;
+         width: 40%;
+         .quantity-controls{width: 42%;}
+         .btn{
+           display: block;
+         }
+       }
+     }
   
       img {
         width: 100%;
         border-radius: 20px;
-        border: 1px solid rgba(128, 128, 128, 0.125);
+        border: 1px solid var(--dark-blue);
         box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.5);
       }
     }
@@ -40,13 +72,49 @@
       color: white;
       padding: 5px 10px;
       border-radius: 10px;
+      
     }
   
     .modal-details {
       padding: 10px;
       flex: 2;
       font-family: $primary-font;
-      color: $DarkBlue;
+      color: var(--dark-blue);
+      @include sm{
+        display: none !important;
+      }
+      @include md{
+        display: none !important;
+      }
+      @include lg{
+        h3{
+          font-size: 2rem !important;
+        }
+        p{
+          font-size: 0.9rem !important;
+          width: 60% !important;
+        }
+        #stock{
+          width: 20% !important;
+        }
+      }
+      @include lg{
+        h3{
+          font-size: 2rem !important;
+        }
+        p{
+          font-size: 0.9rem !important;
+          width: 60% !important;
+        }
+        #stock{
+          width: 20% !important;
+        }
+      }
+      @include xl{
+        p{
+          width: 80%;
+        }
+      }
       h3{
         font-weight: bolder;
         font-family: $secondary-font;
@@ -61,23 +129,6 @@
         padding: 0.5rem;
         border: 1px solid $StrongCyan;
      }
-
-     .quantity-controls{
-        display: inline-block;
-        background-color: $DarkBlue;
-        color: #fff;
-        padding: 0.4rem 0rem;
-        border-radius: 5rem;
-        text-align: center;
-        width: 20%;
-        margin-bottom: 1rem;
-        button,span{
-            margin: 0rem 0.5rem;
-            font-size: 0.8rem;
-        }
-        
-     }
-  
      
     }
   
@@ -96,7 +147,7 @@
     }
   
     .size-btn {
-      border: 1px solid #ccc;
+      border: 1px solid var(--dark-blue);
       padding: 5px 15px;
       background-color: #f8f8f8;
       cursor: pointer;
@@ -113,7 +164,29 @@
         padding: 0.6rem;
         border-radius: 15px;
         background-color: $StrongCyan;
+        position: relative;
+        right: 100%;
       }
+    }
+    .quantity-controls{
+      display: inline-block;
+      background-color:var(--dark-blue) !important;
+      color: var(--white) !important;
+      padding: 0.4rem 0rem;
+      border-radius: 5rem;
+      text-align: center;
+      width: 20%;
+      margin-bottom: 1rem;
+      button,span{
+          margin: 0rem 0.5rem;
+          font-size: 0.8rem;
+      }
+      
+   }
+
+    .btn{
+      background-color:var(--dark-blue) !important;
+      color: var(--white) !important;
     }
   }
   
